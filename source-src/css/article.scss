@@ -1,50 +1,61 @@
-.body-wrap{
+.body-wrap {
   margin-bottom: 80px;
 }
+
 .article {
   margin: 30px;
   position: relative;
   background: #fff;
   -webkit-transition: all 0.2s ease-in;
-  &.show{
+
+  &.show {
     visibility: visible;
     -webkit-animation: cd-bounce-1 0.6s;
     -moz-animation: cd-bounce-1 0.6s;
     animation: cd-bounce-1 0.6s;
   }
-  &.hidden{
+
+  &.hidden {
     visibility: hidden;
   }
-  img{
+
+  img {
     max-width: 100%;
   }
 }
+
 @-webkit-keyframes cd-bounce-1 {
   0% {
     opacity: 0;
     -webkit-transform: scale(1);
   }
+
   60% {
     opacity: 1;
     -webkit-transform: scale(1.01);
   }
+
   100% {
     -webkit-transform: scale(1);
   }
 }
+
 @-moz-keyframes cd-bounce-1 {
   0% {
     opacity: 0;
     -moz-transform: scale(1);
   }
+
   60% {
     opacity: 1;
     -moz-transform: scale(1.01);
   }
+
   100% {
     -moz-transform: scale(1);
   }
 }
+
 @keyframes cd-bounce-1 {
   0% {
     opacity: 0;
@@ -54,6 +65,7 @@
     -o-transform: scale(1);
     transform: scale(1);
   }
+
   60% {
     opacity: 1;
     -webkit-transform: scale(1.01);
@@ -62,6 +74,7 @@
     -o-transform: scale(1.01);
     transform: scale(1.01);
   }
+
   100% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -70,18 +83,21 @@
     transform: scale(1);
   }
 }
-.article-index{
+
+.article-index {
   margin-left: 200px;
   padding: 15px 0;
   margin-right: 75px;
-  .brief{
+
+  .brief {
     display: block;
     color: #a8a8a8;
     font-size: 12px;
     line-height: 14px;
     height: 7px;
     padding-left: 2px;
-    &:before{
+
+    &:before {
       display: inline-block;
       content: "“";
       font-family: serif;
@@ -104,50 +120,59 @@
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
-  &:hover{
+
+  &:hover {
     color: #B0A0AA;
   }
 }
 
-.article-inner{
+.article-inner {
   position: relative;
   margin-bottom: 20px;
 }
-.article-header{
+
+.article-header {
   border-left: 5px solid #4d4d4d;
   padding: 15px 0px 15px 25px;
 }
 
-.article-info.info-on-right{
+.article-info.info-on-right {
   margin: 10px 0 0 0;
   float: right;
 }
-.article-info-index.article-info{
+
+.article-info-index.article-info {
   padding-top: 20px;
   margin: 30px 30px 0 30px;
   border-top: 1px solid #ddd;
 }
-.article-info-post.article-info{
+
+.article-info-post.article-info {
   padding: 0;
   border: none;
   margin: -30px 0 20px 30px;
 }
-.article-entry{
+
+.article-entry {
   line-height: 1.8em;
   padding-right: 30px;
   padding-left: 30px;
-  p{
+
+  p {
     margin-top: 10px;
   }
-  p code,li code{
+
+  p code,
+  li code {
     padding: 1px 3px;
     margin: 0 3px;
     background: #ddd;
     border: 1px solid #ccc;
-    font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
     word-wrap: break-word;
     font-size: 14px;
   }
+
   blockquote {
     background: #ddd;
     border-left: 5px solid #ccc;
@@ -155,15 +180,18 @@
     margin-top: 10px;
     border-left: 5px solid #657b83;
     background: #f6f6f6;
-    p{
+
+    p {
       margin-top: 0;
     }
   }
+
   em {
     font-style: italic;
   }
-  ul{
-    li:before{
+
+  ul {
+    li:before {
       content: "";
       width: 6px;
       height: 6px;
@@ -176,48 +204,64 @@
       margin-top: 12px;
     }
   }
-  ul,ol{
+
+  ul,
+  ol {
     font-size: 14px;
-    margin: 10px 0px;  
+    margin: 10px 0px;
   }
-  li{
-    ul,ol{
+
+  li {
+
+    ul,
+    ol {
       margin-left: 30px;
-      li:before{
+
+      li:before {
         content: "";
         background: #dedede;
       }
     }
   }
-  h1{
+
+  h1 {
     margin-top: 30px;
   }
-  h2{
+
+  h2 {
     margin-top: 20px;
     font-weight: 300;
     color: #574C4C;
     padding-bottom: 5px;
     border-bottom: 1px solid #ddd;
   }
-  h3,h4,h5,h6{
+
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-top: 20px;
     font-weight: 300;
     color: #574C4C;
     padding-bottom: 5px;
     border-bottom: 1px solid #ddd;
   }
-  video{
+
+  video {
     max-width: 100%;
   }
+
   strong {
     font-weight: bold;
   }
-  .caption{
+
+  .caption {
     display: block;
     font-size: 0.8em;
     color: #aaa;
   }
-  hr{
+
+  hr {
     height: 0;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -226,6 +270,7 @@
     border-top: 1px solid #DDD;
     border-bottom: 1px solid #FFF;
   }
+
   pre {
     font-size: 1 / 0.9em;
     line-height: 1.5;
@@ -236,41 +281,51 @@
     font-size: 10px;
     border: 1px solid #ccc;
     text-shadow: 0 1px #444;
-    font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-    code{
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+
+    code {
       font-size: 14px;
     }
   }
-  table{
-    width:100%;
+
+  table {
+    width: 100%;
     border: 1px solid #dedede;
     margin: 15px 0;
-    border-collapse:collapse;
-    tr,td{
-      height:35px;
+    border-collapse: collapse;
+
+    tr,
+    td {
+      height: 35px;
     }
-    thead{
+
+    thead {
       tr {
         background: #f8f8f8;
       }
     }
-    tbody{
-      tr:hover{
+
+    tbody {
+      tr:hover {
         background: #efefef;
       }
     }
-    td,th{
+
+    td,
+    th {
       border: 1px solid #dedede;
       padding: 0 10px;
     }
   }
-  figure{
+
+  figure {
     table {
       border: none;
       width: auto;
       margin: 0;
-      tbody{
-        tr:hover{
+
+      tbody {
+        tr:hover {
           background: none;
         }
       }
@@ -278,7 +333,7 @@
   }
 }
 
-.article-meta{
+.article-meta {
   width: 150px;
   font-size: 14;
   text-align: right;
@@ -287,25 +342,29 @@
   top: 23px;
   text-align: center;
   z-index: 1;
-  time{
+
+  time {
     color: #aaa;
   }
 }
 
-#article-nav{
+#article-nav {
   margin: 80px 0 30px 0;
   padding-bottom: 10px;
-  .article-nav-link-wrap{
+
+  .article-nav-link-wrap {
     margin: 0px 30px 0px 30px;
     font-size: 14px;
     color: #333;
-    .article-nav-title{
+
+    .article-nav-title {
       display: inline-block;
       font-size: 12px;
       color: #aaa;
       transition: color 0.3s;
     }
-    strong{
+
+    strong {
       background: #ddd;
       color: #fff;
       border-radius: 100%;
@@ -315,16 +374,19 @@
       text-align: center;
       transition: background 0.3s;
     }
-    &:hover{
-      strong{
+
+    &:hover {
+      strong {
         background: #4d4d4d;
       }
-      .article-nav-title{
+
+      .article-nav-title {
         color: #4d4d4d;
       }
     }
   }
-  #article-nav-older{
+
+  #article-nav-older {
     float: right;
   }
 }

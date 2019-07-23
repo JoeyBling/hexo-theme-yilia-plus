@@ -10,7 +10,7 @@ var CleanPlugin = require('clean-webpack-plugin');
 var minifyHTML = {
   collapseInlineTagWhitespace: true,
   collapseWhitespace: true,
-  minifyJS:true
+  minifyJS: true
 }
 
 module.exports = {
@@ -52,7 +52,7 @@ module.exports = {
     }
   },
   // devtool: '#eval-source-map',
-  postcss: function() {
+  postcss: function () {
     return [autoprefixer];
   },
   plugins: [

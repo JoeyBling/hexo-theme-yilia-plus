@@ -1,6 +1,12 @@
 hexo-theme-yilia-plus
 ================
 
+此项目是[hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia)的升级版，写这个项目的初衷就是因为原作者好久没有更新了，所以也是把我自己优化yilia后的配置开源出来大家互相学习
+
+## 介绍
+- 功能还很少，欢迎各位给我提意见和建议~
+- **本项目源于：[https://github.com/litten/hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia "https://github.com/litten/hexo-theme-yilia")。向作者表示深深的敬意。**
+
 Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
 崇尚简约优雅，以及极致的性能。 你可以点击 [我的博客](http://litten.me/) 查看效果。           
  
@@ -155,24 +161,18 @@ avatar:
 #是否开启分享
 share_jia: true
 
-#评论：1、多说；2、网易云跟帖；3、畅言；4、Disqus；5、Gitment
+#评论：1、畅言；2、Disqus；3、Gitment
 #不需要使用某项，直接设置值为false，或注释掉
 #具体请参考wiki：https://github.com/litten/hexo-theme-yilia/wiki/
 
-#1、多说
-duoshuo: false
-
-#2、网易云跟帖
-wangyiyun: false
-
-#3、畅言
+#1、畅言
 changyan_appid: false
 changyan_conf: false
 
-#4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
+#2、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 disqus: false
 
-#5、Gitment
+#3、Gitment
 gitment_owner: false      #你的 GitHub ID
 gitment_repo: ''          #存储评论的 repo
 gitment_oauth:

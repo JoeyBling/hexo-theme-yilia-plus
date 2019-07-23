@@ -1,7 +1,7 @@
 {
-  "name": "yilia",
-  "version": "4.0.0",
-  "description": "a theme for hexo",
+  "name": "yilia-plus",
+  "version": "1.0.0",
+  "description": "a theme for hexo,hexo-theme-yilia-plus",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack",
@@ -9,19 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/litten/hexo-theme-yilia.git"
+    "url": "git+https://github.com/JoeyBling/hexo-theme-yilia-plus.git"
   },
   "keywords": [
     "hexo",
     "theme",
-    "blog"
+    "blog",
+    "yilia-plus"
   ],
-  "author": "litten",
-  "license": "ISC",
+  "author": "周思伟",
+  "license": "Apache License",
   "bugs": {
-    "url": "https://github.com/litten/hexo-theme-yilia/issues"
+    "url": "https://github.com/JoeyBling/hexo-theme-yilia-plus/issues"
   },
-  "homepage": "https://github.com/litten/hexo-theme-yilia#readme",
+  "homepage": ".",
   "devDependencies": {
     "autoprefixer": "^6.5.1",
     "clean-webpack-plugin": "^0.1.15",
@@ -30,7 +31,7 @@
     "dom101": "^1.3.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.24.1",
-    "node-sass": "^3.9.3",
+    "node-sass": "^4.11.0",
     "postcss-loader": "^1.0.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
@@ -45,7 +46,6 @@
     "babel-preset-es2015": "6.24.0",
     "babel-preset-react": "6.23.0",
     "babel-preset-stage-2": "6.22.0",
-    "badjs-report": "^1.2.2",
     "es6-promise": "^4.0.5",
     "fetch": "^1.1.0",
     "fetch-ie8": "^1.4.3",

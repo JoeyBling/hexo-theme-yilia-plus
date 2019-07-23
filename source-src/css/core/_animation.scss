@@ -6,252 +6,269 @@
 //-----------------------------------------------------
 
 %animation-basic {
-    animation-duration: 0.3s;
-    animation-fill-mode: both;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
 }
 
 // fade in/out
 //-----------------------------------------------------
 
 @mixin animation-fade-in($className: fade, $from: 0) {
-    $name: str-insert(In, $className, 0);
+  $name: str-insert(In, $className, 0);
 
-    .#{$className}-in {
-        animation-name: $name;
-        @extend %animation-basic;
-    }
-    @include animation-fade($name: $name, $from: $from);
+  .#{$className}-in {
+    animation-name: $name;
+    @extend %animation-basic;
+  }
+
+  @include animation-fade($name: $name, $from: $from);
 }
 
 @mixin animation-fade-out($className: fade, $to: 0) {
-    $name: str-insert(Out, $className, 0);
+  $name: str-insert(Out, $className, 0);
 
-    .#{$className}-out {
-        animation-name: $name;
-        @extend %animation-basic;
-    }
+  .#{$className}-out {
+    animation-name: $name;
+    @extend %animation-basic;
+  }
 
-    @include animation-fade($name: $name, $from: 1, $to: $to);
+  @include animation-fade($name: $name, $from: 1, $to: $to);
 }
 
 // shrink in/out
 //-----------------------------------------------------
 
 @mixin animation-shrink-in($className: shrink, $from: 0.815) {
-    $name: str-insert(In, $className, 0);
-    
-    .#{$className}-in {
-        animation-name: $name;
-        @extend %animation-basic;
+  $name: str-insert(In, $className, 0);
+
+  .#{$className}-in {
+    animation-name: $name;
+    @extend %animation-basic;
+  }
+
+  @keyframes #{$name} {
+    0% {
+      opacity: 0;
+      transform: scale($from);
     }
-    @keyframes #{$name} {
-        0% {
-            opacity: 0;
-            transform: scale($from);
-        }
-        100% {
-            opacity: 1;
-            transform: scale(1);
-        }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
     }
+  }
 }
 
 @mixin animation-shrink-out($className: shrink, $to: 1.185) {
-    $name: str-insert(Out, $className, 0);
+  $name: str-insert(Out, $className, 0);
 
-    .#{$className}-out {
-        animation-name: $name;
-        @extend %animation-basic;
+  .#{$className}-out {
+    animation-name: $name;
+    @extend %animation-basic;
+  }
+
+  @keyframes #{$name} {
+    0% {
+      opacity: 1;
+      transform: scale(1);
     }
 
-    @keyframes #{$name} {
-        0% {
-            opacity: 1;
-            transform: scale(1);
-        }
-        100% {
-            opacity: 0;
-            transform: scale($to);
-        }
+    100% {
+      opacity: 0;
+      transform: scale($to);
     }
+  }
 }
 
 // down in/out
 //-----------------------------------------------------
 
 @mixin animation-down-in($className: down, $value: 100%) {
-    $name: str-insert(In, $className, 0);
-    
-    .#{$className}-in {
-        animation-name: $name;
-        @extend %animation-basic;
+  $name: str-insert(In, $className, 0);
+
+  .#{$className}-in {
+    animation-name: $name;
+    @extend %animation-basic;
+  }
+
+  @keyframes #{$name} {
+    0% {
+      opacity: 0;
+      transform: translate(0, $value);
     }
 
-    @keyframes #{$name} {
-        0% {
-            opacity: 0;
-            transform: translate(0, $value);
-        }
-        100% {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
     }
+  }
 }
 
 @mixin animation-down-out($className: down, $value: 100%) {
-    $name: str-insert(Out, $className, 0);
+  $name: str-insert(Out, $className, 0);
 
-    .#{$className}-out {
-        animation-name: $name;
-        @extend %animation-basic;
+  .#{$className}-out {
+    animation-name: $name;
+    @extend %animation-basic;
+  }
+
+  @keyframes #{$name} {
+    0% {
+      opacity: 1;
+      transform: translate(0, 0);
     }
 
-    @keyframes #{$name} {
-        0% {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
-        100% {
-            opacity: 0;
-            transform: translate(0, $value);
-        }
+    100% {
+      opacity: 0;
+      transform: translate(0, $value);
     }
+  }
 }
 
 // up in/out
 //-----------------------------------------------------
 
 @mixin animation-up-in($className: up, $value: -100%) {
-    $name: str-insert(In, $className, 0);
-    
-    .#{$className}-in {
-        animation-name: $name;
-        @extend %animation-basic;
+  $name: str-insert(In, $className, 0);
+
+  .#{$className}-in {
+    animation-name: $name;
+    @extend %animation-basic;
+  }
+
+  @keyframes #{$name} {
+    0% {
+      opacity: 0;
+      transform: translate(0, $value);
     }
 
-    @keyframes #{$name} {
-        0% {
-            opacity: 0;
-            transform: translate(0, $value);
-        }
-        100% {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
     }
+  }
 }
 
 @mixin animation-up-out($className: up, $value: -100%) {
-    $name: str-insert(Out, $className, 0);
+  $name: str-insert(Out, $className, 0);
 
-    .#{$className}-out {
-        animation-name: $name;
-        @extend %animation-basic;
+  .#{$className}-out {
+    animation-name: $name;
+    @extend %animation-basic;
+  }
+
+  @keyframes #{$name} {
+    0% {
+      opacity: 1;
+      transform: translate(0, 0);
     }
 
-    @keyframes #{$name} {
-        0% {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
-        100% {
-            opacity: 0;
-            transform: translate(0, $value);
-        }
+    100% {
+      opacity: 0;
+      transform: translate(0, $value);
     }
+  }
 }
 
 // left in/out
 //-----------------------------------------------------
 
 @mixin animation-left-in($className: left, $value: -100%) {
-    $name: str-insert(In, $className, 0);
-    
-    .#{$className}-in {
-        animation-name: $name;
-        @extend %animation-basic;
+  $name: str-insert(In, $className, 0);
+
+  .#{$className}-in {
+    animation-name: $name;
+    @extend %animation-basic;
+  }
+
+  @keyframes #{$name} {
+    0% {
+      opacity: 0;
+      transform: translate($value, 0);
     }
 
-    @keyframes #{$name} {
-        0% {
-            opacity: 0;
-            transform: translate($value, 0);
-        }
-        100% {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
     }
+  }
 }
 
 @mixin animation-left-out($className: left, $value: -100%) {
-    $name: str-insert(Out, $className, 0);
+  $name: str-insert(Out, $className, 0);
 
-    .#{$className}-out {
-        animation-name: $name;
-        @extend %animation-basic;
+  .#{$className}-out {
+    animation-name: $name;
+    @extend %animation-basic;
+  }
+
+  @keyframes #{$name} {
+    0% {
+      opacity: 1;
+      transform: translate(0, 0);
     }
 
-    @keyframes #{$name} {
-        0% {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
-        100% {
-            opacity: 0;
-            transform: translate($value, 0);
-        }
+    100% {
+      opacity: 0;
+      transform: translate($value, 0);
     }
+  }
 }
 
 // right in/out
 //-----------------------------------------------------
 
 @mixin animation-right-in($className: right, $value: 100%) {
-    $name: str-insert(In, $className, 0);
-    
-    .#{$className}-in {
-        animation-name: $name;
-        @extend %animation-basic;
+  $name: str-insert(In, $className, 0);
+
+  .#{$className}-in {
+    animation-name: $name;
+    @extend %animation-basic;
+  }
+
+  @keyframes #{$name} {
+    0% {
+      opacity: 0;
+      transform: translate($value, 0);
     }
 
-    @keyframes #{$name} {
-        0% {
-            opacity: 0;
-            transform: translate($value, 0);
-        }
-        100% {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
     }
+  }
 }
 
 @mixin animation-right-out($className: right, $value: 100%) {
-    $name: str-insert(Out, $className, 0);
+  $name: str-insert(Out, $className, 0);
 
-    .#{$className}-out {
-        animation-name: $name;
-        @extend %animation-basic;
+  .#{$className}-out {
+    animation-name: $name;
+    @extend %animation-basic;
+  }
+
+  @keyframes #{$name} {
+    0% {
+      opacity: 1;
+      transform: translate(0, 0);
     }
 
-    @keyframes #{$name} {
-        0% {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
-        100% {
-            opacity: 0;
-            transform: translate($value, 0);
-        }
+    100% {
+      opacity: 0;
+      transform: translate($value, 0);
     }
+  }
 }
 
 
 /*弹性动画*/
 @keyframes leftIn {
-  from, 60%, 75%, 90%, to {
+
+  from,
+  60%,
+  75%,
+  90%,
+  to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 
@@ -277,13 +294,18 @@
 }
 
 %anmLeftIn {
-    animation-duration: .8s;
-    animation-fill-mode: both;
-    animation-name: leftIn;
+  animation-duration: .8s;
+  animation-fill-mode: both;
+  animation-name: leftIn;
 }
 
 @keyframes leftOut {
-  from, 60%, 75%, 90%, to {
+
+  from,
+  60%,
+  75%,
+  90%,
+  to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 
@@ -309,12 +331,17 @@
 }
 
 %anmLeftOut {
-    animation-duration: .8s;
-    animation-name: leftOut;
+  animation-duration: .8s;
+  animation-name: leftOut;
 }
 
 @keyframes smallLeftIn {
-  from, 60%, 75%, 90%, to {
+
+  from,
+  60%,
+  75%,
+  90%,
+  to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 
@@ -340,13 +367,18 @@
 }
 
 %anmSmallLeftIn {
-    animation-duration: .8s;
-    animation-fill-mode: both;
-    animation-name: smallLeftIn;
+  animation-duration: .8s;
+  animation-fill-mode: both;
+  animation-name: smallLeftIn;
 }
 
 @keyframes smallleftOut {
-  from, 60%, 75%, 90%, to {
+
+  from,
+  60%,
+  75%,
+  90%,
+  to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 
@@ -372,7 +404,7 @@
 }
 
 %anmSmallLeftOut {
-    animation-duration: .8s;
-    animation-fill-mode: both;
-    animation-name: smallleftOut;
+  animation-duration: .8s;
+  animation-fill-mode: both;
+  animation-name: smallleftOut;
 }

@@ -1,5 +1,5 @@
 <% var defaultBg = '#4d4d4d'; %>
-<div class="overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>"></div>
+<div class="overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>;background: url(<%=config.root%>img/biubiubiu.gif) no-repeat ;"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="<%=theme.root%>" class="profilepic">
@@ -15,7 +15,7 @@
 		<nav class="header-menu">
 			<ul>
 			<% for (var i in theme.menu){ %>
-				<li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+				<li><a href="<%- url_for(theme.menu[i]) %>" target="_blank" ><%= i %></a></li>
 	        <%}%>
 			</ul>
 		</nav>
@@ -32,6 +32,12 @@
 					<a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"><i class="icon-<%= i %>"></i></a>
 		        <%}%>
 			</div>
+		<!-- 网易云音乐插件 -->
+		<% if (theme.music && theme.music.enable){ %>
+			<div style="position:absolute; bottom:120px left:auto; width:85%">
+				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="52" src="//music.163.com/outchain/player?type=2&id=<%=theme.music.id||1334445174%>&auto=<%=theme.music.autoplay?1:0%>&height=32"></iframe>
+			</div>
+		<% } %>
 		</nav>
 	</header>		
 </div>

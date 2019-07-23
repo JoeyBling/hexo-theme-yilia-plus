@@ -22,7 +22,8 @@
     $args: map-remove($args, $media-type-key);
   }
 
-  @each $key, $value in $args {
+  @each $key,
+  $value in $args {
     @if $value {
       $expr: "#{$expr} and (#{$key}: #{$value})";
     }
@@ -78,6 +79,7 @@
 // ----------------------------------------------------
 
 @mixin hdpi($ratio: 1.3) {
+
   @media only screen and (-webkit-min-device-pixel-ratio: $ratio),
   screen and (min-resolution: #{round($ratio*96)}dpi) {
     @content;
@@ -92,24 +94,19 @@
   $min-width: false;
   $min-height: false;
 
-  $standards: ('720p', 1280px, 720px)
-              ('1080', 1920px, 1080px)
-              ('2K', 2048px, 1080px)
-              ('4K', 4096px, 2160px);
+  $standards: ('720p', 1280px, 720px) ('1080', 1920px, 1080px) ('2K', 2048px, 1080px) ('4K', 4096px, 2160px);
 
   @each $s in $standards {
-    @if $standard == nth($s, 1) {
+    @if $standard==nth($s, 1) {
       $min-width: nth($s, 2);
       $min-height: nth($s, 3);
     }
   }
 
-  @include mq(
-    $min-device-width: $min-width,
+  @include mq($min-device-width: $min-width,
     $min-device-height: $min-height,
     $min-width: $min-width,
-    $min-height: $min-height
-  ) {
+    $min-height: $min-height) {
     @content;
   }
 }
@@ -124,13 +121,11 @@
   $pixel-ratio: 2;
   $aspect-ratio: '2/3';
 
-  @include mq(
-    $min-device-width: $min,
+  @include mq($min-device-width: $min,
     $max-device-width: $max,
     $orientation: $orientation,
     $device-aspect-ratio: $aspect-ratio,
-    $-webkit-device-pixel-ratio: $pixel-ratio
-  ) {
+    $-webkit-device-pixel-ratio: $pixel-ratio) {
     @content;
   }
 }
@@ -145,13 +140,11 @@
   $pixel-ratio: 2;
   $aspect-ratio: '40/71';
 
-  @include mq(
-    $min-device-width: $min,
+  @include mq($min-device-width: $min,
     $max-device-width: $max,
     $orientation: $orientation,
     $device-aspect-ratio: $aspect-ratio,
-    $-webkit-device-pixel-ratio: $pixel-ratio
-  ) {
+    $-webkit-device-pixel-ratio: $pixel-ratio) {
     @content;
   }
 }
@@ -165,12 +158,10 @@
   $max: 667px;
   $pixel-ratio: 2;
 
-  @include mq(
-    $min-device-width: $min,
+  @include mq($min-device-width: $min,
     $max-device-width: $max,
     $orientation: $orientation,
-    $-webkit-device-pixel-ratio: $pixel-ratio
-  ) {
+    $-webkit-device-pixel-ratio: $pixel-ratio) {
     @content;
   }
 }
@@ -184,12 +175,10 @@
   $max: 736px;
   $pixel-ratio: 3;
 
-  @include mq(
-    $min-device-width: $min,
+  @include mq($min-device-width: $min,
     $max-device-width: $max,
     $orientation: $orientation,
-    $-webkit-device-pixel-ratio: $pixel-ratio
-  ) {
+    $-webkit-device-pixel-ratio: $pixel-ratio) {
     @content;
   }
 }
@@ -202,11 +191,9 @@
   $min: 768px;
   $max: 1024px;
 
-  @include mq(
-    $min-device-width: $min,
+  @include mq($min-device-width: $min,
     $max-device-width: $max,
-    $orientation: $orientation
-  ) {
+    $orientation: $orientation) {
     @content;
   }
 }
@@ -220,12 +207,10 @@
   $max: 1024px;
   $pixel-ratio: 2;
 
-  @include mq(
-    $min-device-width: $min,
+  @include mq($min-device-width: $min,
     $max-device-width: $max,
     $orientation: $orientation,
-    $-webkit-device-pixel-ratio: $pixel-ratio
-  ) {
+    $-webkit-device-pixel-ratio: $pixel-ratio) {
     @content;
   }
 }
