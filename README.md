@@ -1,7 +1,7 @@
 hexo-theme-yilia-plus
 ================
 
-&#160;&#160;&#160;&#160;此项目是根据**[hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia)**主题做了一些优化和改动，写这个项目的初衷就是深入学习`Hexo`。使用`yilia`主题可以快速迁移到`yilia-plus`
+&#160;&#160;&#160;&#160;此项目是根据[hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia)主题做了一些优化和改动，写这个项目的初衷就是深入学习`Hexo`。使用`yilia`主题可以快速迁移到`yilia-plus`
 
 #### [立即体验](#start)
 
@@ -15,6 +15,7 @@ hexo-theme-yilia-plus
 崇尚简约优雅，以及极致的性能。 你可以点击 [我的博客](https://zhousiwei.gitee.io) 查看效果。
 
 如果想体验手机浏览效果，可以扫一下二维码：
+
 ![](./images/qrcode.png)
 
 ----------
