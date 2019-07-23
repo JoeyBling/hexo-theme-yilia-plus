@@ -8,8 +8,8 @@ hexo-theme-yilia-plus
 - **本项目源于：[https://github.com/litten/hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia "https://github.com/litten/hexo-theme-yilia")。向作者表示深深的敬意。**
 
 Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
-崇尚简约优雅，以及极致的性能。 你可以点击 [我的博客](http://litten.me/) 查看效果。           
- 
+崇尚简约优雅，以及极致的性能。 你可以点击 [我的博客](http://litten.me/) 查看效果。
+
 如果想体验手机浏览效果，可以扫一下二维码：
 
 ![litten-qrcode](https://cloud.githubusercontent.com/assets/2024949/6349328/51a067fe-bc64-11e4-881c-f68050c50c28.png)
@@ -18,11 +18,11 @@ Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
 
 **关于主题：**
 
-1. 崇尚简约       
-2. 追求移动端体验     
-3. 希望把加载速度做到极致（努力中）    
-4. 让大家把注意力放到内容上。这是本主题设计初衷      
-5. 主题不支持IE6，7，8。以后也不会     
+1. 崇尚简约
+2. 追求移动端体验
+3. 希望把加载速度做到极致（努力中）
+4. 让大家把注意力放到内容上。这是本主题设计初衷
+5. 主题不支持IE6，7，8。以后也不会
 
 **近期更新（2017.07.09）：**
 
@@ -40,7 +40,7 @@ Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
 **计划中：**
 
 1. 移动端优化
-             
+
 ## 一、外观
 
 ####**常规**
@@ -49,11 +49,11 @@ Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
 
 ####**手机**
 
-![手机](https://cloud.githubusercontent.com/assets/2024949/19027020/1c5b756a-895f-11e6-99bf-ddff9687aee0.gif)   
+![手机](https://cloud.githubusercontent.com/assets/2024949/19027020/1c5b756a-895f-11e6-99bf-ddff9687aee0.gif)
 
 ####**ipad横竖屏切换**
 
-![ipad横竖屏切换](https://cloud.githubusercontent.com/assets/2024949/19026392/e74e1816-8957-11e6-8f08-eac9b3c8c036.gif)                    
+![ipad横竖屏切换](https://cloud.githubusercontent.com/assets/2024949/19026392/e74e1816-8957-11e6-8f08-eac9b3c8c036.gif)
 
 ## 二、开发者
 
@@ -87,22 +87,26 @@ git pull
 主题配置文件在主目录下的`_config.yml`，请根据自己需要修改使用。
 完整配置例子，可以参考[我的博客备份](https://github.com/litten/BlogBackup)
 
-```
-# Header
-
+```yaml
+# Header-菜单
 menu:
   主页: /
-  随笔: /tags/随笔/
+  技术笔记: https://zhousiwei.gitee.io/ibooks/
+  个人简历: https://zhousiwei.gitee.io/cv/
+  Java: /tags/Java/
+  Linux: /tags/Linux/
 
-# SubNav
+# SubNav-导航
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
-  #qq: "#"
-  #weixin: "#"
-  #jianshu: "#"
+  github: "https://github.com/JoeyBling"
+  gitee: "https://gitee.com/zhousiwei" # 码云
+  jianshu: "https://www.jianshu.com/u/02cbf31a043a" #简书
+  csdn: "https://blog.csdn.net/qq_30930805"
+  #rss: "#"
+  zhihu: "https://zhihu.com/people/joeybling"
+  qq: "img/2434387555.jpg"
+  weixin: "img/weixin_.png"
+  weibo: "http://weibo.com/jayinfo"
   #douban: "#"
   #segmentfault: "#"
   #bilibili: "#"
@@ -113,12 +117,13 @@ subnav:
   #twitter: "#"
   #linkedin: "#"
 
+# RSS订阅(关于如何配置启用:https://www.jianshu.com/p/2aaac7a19736)
 rss: /atom.xml
 
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
-# 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
-root: 
+# 请将您的 url 设为 http://yoursite.com/blog 并把 / 设为 /blog/。
+root: /
 
 # Content
 
@@ -129,7 +134,7 @@ show_all_link: '展开全文'
 # 数学公式
 mathjax: false
 # 是否在新窗口打开链接
-open_in_new: false
+open_in_new: true
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
@@ -137,9 +142,9 @@ reward_type: 2
 # 打赏wording
 reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: 
+alipay: /img/alipay.jpg
 # 微信二维码图片地址
-weixin: 
+weixin: /img/weixin.png
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
@@ -153,37 +158,75 @@ toc_empty_wording: '目录，不存在的…'
 top: true
 
 # Miscellaneous
-baidu_analytics: ''
+# 百度统计
+baidu_analytics: '11a1b5a8f55434714171a862b19c459c'
 google_analytics: ''
-favicon: /favicon.png
 
-#你的头像url
-avatar:
+# 网站图标
+favicon: /favicon.ico
 
-#是否开启分享
+# 你的头像url
+avatar: /img/head.jpg
+
+# 是否开启分享
 share_jia: true
 
-#评论：1、畅言；2、Disqus；3、Gitment
-#不需要使用某项，直接设置值为false，或注释掉
-#具体请参考wiki：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki
+# 评论：1、畅言；2、Disqus；3、Gitment
+# 不需要使用某项，直接设置值为false，或注释掉
+# 具体请参考wiki：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki
 
-#1、畅言
+# 1、畅言
 changyan_appid: false
 changyan_conf: false
 
-#2、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia-plus的
+# 2、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 disqus: false
 
-#3、Gitment
-gitment_owner: false      #你的 GitHub ID
-gitment_repo: ''          #存储评论的 repo
-gitment_oauth:
-  client_id: ''           #client ID
-  client_secret: ''       #client secret
+# 3、Gitment----码云
+#gitment_owner: false      #你的 GitHub ID
+#gitment_owner: JoeyBling      #你的 GitHub ID
+#gitment_repo: 'JoeyBling.github.io'          #存储评论的 repo
+giteement:
+  enable: true
+  # 是否使用官方js(可以提升访问速度)
+  remote: false
+  redirect_uri: https://zhousiwei.gitee.io/
+  # oauth_uri: https://zhousiwei.gitee.io/
+  # 不能更改
+  oauth_uri: https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token
+  giteeID: zhousiwei
+  # 存储评论的 repo
+  repo: zhousiwei
+  gitment_oauth:
+    client_id: '7a976cb2c6e1005ae4cc132b893328742f8417dddb940f525d49a1faee8d48d9'           #client ID
+    client_secret: 'bbd99dfc7ae1ba4fdd478315487d99d4ca7491b749ffd0aeab82d44dc493ede8'       #client secret
+
+# 是否开启访问量统计功能(不蒜子)
+busuanzi:
+  enable: true
+
+# 网易云音乐插件
+music:
+  enable: true
+  #id: 1332647902  # 网易云分享的ID
+  autoplay: true  # 是否开启自动播放
+
+# 页面点击小红心
+clicklove:
+  enable: true
+
+# GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
+github:
+  url: https://github.com/JoeyBling/
+
+# 页脚 Litten
+pagefooter:
+  litten: 码云:<a href="https://gitee.com/zhousiwei" target="_blank">思伟</a>
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
+  # header: '#D3D1DC'
   header: '#4d4d4d'
   # 右滑板块背景
   slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
@@ -203,15 +246,16 @@ smart_menu:
   friends: '友链'
   aboutme: '关于我'
 
+# 友情链接
 friends:
-  友情链接1: http://localhost:4000/
-  友情链接2: http://localhost:4000/
-  友情链接3: http://localhost:4000/
-  友情链接4: http://localhost:4000/
-  友情链接5: http://localhost:4000/
-  友情链接6: http://localhost:4000/
+  技术笔记: https://zhousiwei.gitee.io/ibooks/
+  GitHub: https://github.com/JoeyBling
+  码云: https://gitee.com/zhousiwei
+  简书: https://www.jianshu.com/u/02cbf31a043a
+  CSDN: https://blog.csdn.net/qq_30930805
+  知乎: https://www.zhihu.com/people/joeybling
+  微博: http://weibo.com/jayinfo
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+# 关于我
+aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
 ```
-
-
