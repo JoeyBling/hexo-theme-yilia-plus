@@ -11,7 +11,7 @@ hexo-theme-yilia-plus
 - 功能还很少，欢迎各位给我提意见和建议~
 - **本项目源于：[https://github.com/litten/hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia "https://github.com/litten/hexo-theme-yilia")。向作者表示深深的敬意。**
 
-**[yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus)**是为 [hexo](https://github.com/hexojs/hexo) 2.4+制作的主题。
+[yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus) 是为 [hexo](https://github.com/hexojs/hexo) 2.4+制作的主题。
 崇尚简约优雅，以及极致的性能。 你可以点击 [我的博客](https://zhousiwei.gitee.io) 查看效果。
 
 如果想体验手机浏览效果，可以扫一下二维码：
@@ -35,7 +35,7 @@ hexo-theme-yilia-plus
 
 ## 二、开发者
 
-&#160;&#160;&#160;&#160;为了性能和开发工程化考虑，**[yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus)**需要使用`webpack`进行构建生成。
+&#160;&#160;&#160;&#160;为了性能和开发工程化考虑，[yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus) 需要使用`webpack`进行构建生成。
 如果您对主题有一些定制化的需求，请参考wiki[《yilia-plus源码目录结构及构建须知》](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/yilia-plus%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E5%8F%8A%E6%9E%84%E5%BB%BA%E9%A1%BB%E7%9F%A5)
 
 ## 三、开始使用
