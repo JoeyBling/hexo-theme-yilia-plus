@@ -43,7 +43,8 @@ var backTop = function (domE, ctn, distance) {
 };
 
 function init() {
-  backTop(document.getElementById('js-jump-container'), document.getElementById('container'));
+  // js-jump-container 离顶部 大于100就显示go-top Button
+  backTop(document.getElementById('js-jump-container'), document.getElementById('container'), 100);
 }
 
 module.exports = {
