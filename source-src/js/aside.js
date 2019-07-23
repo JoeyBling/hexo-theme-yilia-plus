@@ -26,7 +26,7 @@ var backTop = function (domE, ctn, distance) {
   };
 
   function toggleDomE() {
-    domE.style.display = (ctn.scrollTop || document.documentElement.scrollTop || document.body.scrollTop) > (distance || 500) ? 'block' : 'none';
+    domE.style.display = (ctn.scrollTop || document.documentElement.scrollTop || document.body.scrollTop) >= (distance || 500) ? 'block' : 'none';
   }
 
   function throttle(func, wait) {
@@ -43,8 +43,8 @@ var backTop = function (domE, ctn, distance) {
 };
 
 function init() {
-  // js-jump-container 离顶部 大于100就显示go-top Button
-  backTop(document.getElementById('js-jump-container'), document.getElementById('container'), 100);
+  // container 离顶部 >= 80 就显示go-top Button
+  backTop(document.getElementById('js-jump-container'), document.getElementById('container'), 80);
 }
 
 module.exports = {
