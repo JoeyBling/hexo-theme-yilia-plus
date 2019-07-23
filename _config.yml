@@ -93,9 +93,6 @@ changyan_conf: false
 disqus: false
 
 # 3、Gitment----码云
-#gitment_owner: false      #你的 GitHub ID
-#gitment_owner: JoeyBling      #你的 GitHub ID
-#gitment_repo: 'JoeyBling.github.io'          #存储评论的 repo
 giteement:
   enable: true
   # 是否使用官方js(可以提升访问速度)
