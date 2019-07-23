@@ -3,7 +3,7 @@ hexo-theme-yilia-plus
 
 &#160;&#160;&#160;&#160;此项目是根据[hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia)主题做了一些优化和改动，写这个项目的初衷就是深入学习`Hexo`。使用`yilia`主题可以快速迁移到`yilia-plus`
 
-#### [立即体验](#start)
+#### [立即体验](#三开始使用)
 
 > **欢迎使用和Star支持，如使用过程中碰到问题，可以提出Issue，我会尽力完善**
 
@@ -42,7 +42,7 @@ hexo-theme-yilia-plus
 &#160;&#160;&#160;&#160;为了性能和开发工程化考虑，**[yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus)**需要使用`webpack`进行构建生成。
 如果您对主题有一些定制化的需求，请参考wiki[《yilia-plus源码目录结构及构建须知》](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/yilia-plus%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E5%8F%8A%E6%9E%84%E5%BB%BA%E9%A1%BB%E7%9F%A5)
 
-## <span id='start'>三、开始使用</span>
+## 三、开始使用
 
 #### 1、安装
 
