@@ -33,10 +33,6 @@ hexo-theme-yilia-plus
 
 ![常规](./images/web.png)
 
-[comment]: <> (#### **手机**)
-
-[comment]: <> (![手机](https://cloud.githubusercontent.com/assets/2024949/19027020/1c5b756a-895f-11e6-99bf-ddff9687aee0.gif))
-
 ## 二、开发者
 
 &#160;&#160;&#160;&#160;为了性能和开发工程化考虑，**[yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus)**需要使用`webpack`进行构建生成。
