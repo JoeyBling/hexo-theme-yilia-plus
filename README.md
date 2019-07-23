@@ -1,91 +1,72 @@
 hexo-theme-yilia-plus
 ================
 
-此项目是[hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia)的升级版，写这个项目的初衷就是因为原作者好久没有更新了，所以也是把我自己优化yilia后的配置开源出来大家互相学习
+&#160;&#160;&#160;&#160;此项目是根据**[hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia)**主题做了一些优化和改动，写这个项目的初衷就是深入学习`Hexo`。使用`yilia`主题可以快速迁移到`yilia-plus`
+
+#### [立即体验](#start)
+
+> **欢迎使用和Star支持，如使用过程中碰到问题，可以提出Issue，我会尽力完善**
 
 ## 介绍
 - 功能还很少，欢迎各位给我提意见和建议~
 - **本项目源于：[https://github.com/litten/hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia "https://github.com/litten/hexo-theme-yilia")。向作者表示深深的敬意。**
 
-Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
-崇尚简约优雅，以及极致的性能。 你可以点击 [我的博客](http://litten.me/) 查看效果。
+**[yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus)**是为 [hexo](https://github.com/hexojs/hexo) 2.4+制作的主题。
+崇尚简约优雅，以及极致的性能。 你可以点击 [我的博客](https://zhousiwei.gitee.io) 查看效果。
 
 如果想体验手机浏览效果，可以扫一下二维码：
+![](./images/qrcode.png)
 
-![litten-qrcode](https://cloud.githubusercontent.com/assets/2024949/6349328/51a067fe-bc64-11e4-881c-f68050c50c28.png)
+----------
 
-—————————————————————
-
-**关于主题：**
-
+## 关于主题：
 1. 崇尚简约
 2. 追求移动端体验
 3. 希望把加载速度做到极致（努力中）
 4. 让大家把注意力放到内容上。这是本主题设计初衷
 5. 主题不支持IE6，7，8。以后也不会
 
-**近期更新（2017.07.09）：**
-
-2017.07.09
-1. 返回顶部
-2. TOC目录
-
-2016.12.04
-1. 打赏
-2. 搜索
-3. “更好的”标签云
-4. “更好的”分享
-5. 一些动画
-
-**计划中：**
-
-1. 移动端优化
-
 ## 一、外观
 
-####**常规**
+#### **常规**
 
-![常规](https://cloud.githubusercontent.com/assets/2024949/19027861/92879edc-8967-11e6-8e60-7987b6507c8d.gif)
+![常规](./images/web.png)
 
-####**手机**
+[comment]: <> (#### **手机**)
 
-![手机](https://cloud.githubusercontent.com/assets/2024949/19027020/1c5b756a-895f-11e6-99bf-ddff9687aee0.gif)
-
-####**ipad横竖屏切换**
-
-![ipad横竖屏切换](https://cloud.githubusercontent.com/assets/2024949/19026392/e74e1816-8957-11e6-8f08-eac9b3c8c036.gif)
+[comment]: <> (![手机](https://cloud.githubusercontent.com/assets/2024949/19027020/1c5b756a-895f-11e6-99bf-ddff9687aee0.gif))
 
 ## 二、开发者
 
-为了性能和开发工程化考虑，Yilia需要使用webpack进行构建生成。
+&#160;&#160;&#160;&#160;为了性能和开发工程化考虑，**[yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus)**需要使用`webpack`进行构建生成。
+如果您对主题有一些定制化的需求，请参考wiki[《yilia-plus源码目录结构及构建须知》](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/yilia-plus%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E5%8F%8A%E6%9E%84%E5%BB%BA%E9%A1%BB%E7%9F%A5)
 
-如果您对主题有一些定制化的需求，请参考wiki[《Yilia源码目录结构及构建须知》](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/Yilia%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E5%8F%8A%E6%9E%84%E5%BB%BA%E9%A1%BB%E7%9F%A5)
+## <span id='start'>三、开始使用</span>
 
-## 三、使用
-
-#### 安装
+#### 1、安装
 
 ```bash
-$ cd ./themes/
-$ git clone https://github.com/JoeyBling/hexo-theme-yilia-plus.git
-$ mv hexo-theme-yilia-plus yilia-plus
+cd ./themes/
+git clone https://github.com/JoeyBling/hexo-theme-yilia-plus.git
+mv hexo-theme-yilia-plus yilia-plus
 ```
 
-#### 配置
+#### 2、配置
 
-修改hexo根目录下的 `_config.yml` ： `theme: yilia-plus`
+修改hexo根目录下的 `_config.yml`  ➡️  `theme: yilia-plus`
 
-#### 更新
+#### 3、更新
 
-``` bash
+```bash
 cd themes/yilia-plus
 git pull
 ```
 
 ## 四、配置
 
-主题配置文件在主目录下的`_config.yml`，请根据自己需要修改使用。
-完整配置例子，可以参考[我的博客备份](https://github.com/litten/BlogBackup)
+&#160;&#160;&#160;&#160;主题配置文件在主目录下的`_config.yml`，请根据自己需要修改使用。
+
+> 完整配置例子，可以参考[yilia-plus博客备份](http://github.com/JoeyBling/yilia-plus-demo)
 
 ```yaml
 # Header-菜单
@@ -198,8 +179,8 @@ giteement:
   # 存储评论的 repo
   repo: zhousiwei
   gitment_oauth:
-    client_id: '7a976cb2c6e1005ae4cc132b893328742f8417dddb940f525d49a1faee8d48d9'           #client ID
-    client_secret: 'bbd99dfc7ae1ba4fdd478315487d99d4ca7491b749ffd0aeab82d44dc493ede8'       #client secret
+    client_id: ''           #client ID
+    client_secret: ''       #client secret
 
 # 是否开启访问量统计功能(不蒜子)
 busuanzi:
@@ -259,3 +240,14 @@ friends:
 # 关于我
 aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
 ```
+
+## 捐赠
+&#160;&#160;&#160;&#160;**如果感觉对您有帮助，请作者喝杯咖啡吧，请注明您的名字或者昵称，方便作者感谢o(*￣︶￣*)o**
+
+| 微信 | 支付宝 |
+| :---: | :---: |
+| ![](./images/weixin.png) | ![](./images/alipay.jpeg) |
+
+## License
+
+[Apache License](./LICENSE)
