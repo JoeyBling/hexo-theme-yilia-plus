@@ -59,24 +59,26 @@ Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
 
 为了性能和开发工程化考虑，Yilia需要使用webpack进行构建生成。
 
-如果您对主题有一些定制化的需求，请参考wiki[《Yilia源码目录结构及构建须知》](https://github.com/litten/hexo-theme-yilia/wiki/Yilia%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E5%8F%8A%E6%9E%84%E5%BB%BA%E9%A1%BB%E7%9F%A5)
+如果您对主题有一些定制化的需求，请参考wiki[《Yilia源码目录结构及构建须知》](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/Yilia%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E5%8F%8A%E6%9E%84%E5%BB%BA%E9%A1%BB%E7%9F%A5)
 
 ## 三、使用
 
 #### 安装
 
-``` bash
-$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+```bash
+$ cd ./themes/
+$ git clone https://github.com/JoeyBling/hexo-theme-yilia-plus.git
+$ mv hexo-theme-yilia-plus yilia-plus
 ```
 
 #### 配置
 
-修改hexo根目录下的 `_config.yml` ： `theme: yilia`
+修改hexo根目录下的 `_config.yml` ： `theme: yilia-plus`
 
 #### 更新
 
 ``` bash
-cd themes/yilia
+cd themes/yilia-plus
 git pull
 ```
 
@@ -163,13 +165,13 @@ share_jia: true
 
 #评论：1、畅言；2、Disqus；3、Gitment
 #不需要使用某项，直接设置值为false，或注释掉
-#具体请参考wiki：https://github.com/litten/hexo-theme-yilia/wiki/
+#具体请参考wiki：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki
 
 #1、畅言
 changyan_appid: false
 changyan_conf: false
 
-#2、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
+#2、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia-plus的
 disqus: false
 
 #3、Gitment
