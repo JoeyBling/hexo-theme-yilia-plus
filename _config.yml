@@ -68,7 +68,7 @@ top: true
 
 # Miscellaneous
 # 百度统计
-baidu_analytics: '11a1b5a8f55434714171a862b19c459c'
+baidu_analytics: ''
 google_analytics: ''
 
 # 网站图标
@@ -93,7 +93,7 @@ disqus: false
 
 # 3、Gitment----码云
 giteement:
-  enable: true
+  enable: false
   # 是否使用官方js(可以提升访问速度)
   remote: false
   redirect_uri: https://zhousiwei.gitee.io/
@@ -104,8 +104,8 @@ giteement:
   # 存储评论的 repo
   repo: zhousiwei
   gitment_oauth:
-    client_id: '7a976cb2c6e1005ae4cc132b893328742f8417dddb940f525d49a1faee8d48d9'           #client ID
-    client_secret: 'bbd99dfc7ae1ba4fdd478315487d99d4ca7491b749ffd0aeab82d44dc493ede8'       #client secret
+    client_id: ''           #client ID
+    client_secret: ''       #client secret
 
 # 是否开启访问量统计功能(不蒜子)
 busuanzi:
@@ -130,7 +130,7 @@ pagefooter:
   litten: 码云:<a href="https://gitee.com/zhousiwei" target="_blank">思伟</a>
 
 # 开启百度站长平台主动推送(https://ziyuan.baidu.com/linksubmit/index)
-baidu_push: true
+baidu_push: false
 
 # 版权声明
 # 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有copyright不为false的文章均有版权声明
