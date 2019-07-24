@@ -3,8 +3,7 @@ menu:
   主页: /
   技术笔记: https://zhousiwei.gitee.io/ibooks/
   个人简历: https://zhousiwei.gitee.io/cv/
-  Java: /tags/Java/
-  Linux: /tags/Linux/
+  日记本: /tags/日记本/
 
 # SubNav-导航
 subnav:
@@ -114,13 +113,13 @@ busuanzi:
 
 # 网易云音乐插件
 music:
-  enable: true
+  enable: false
   #id: 1332647902  # 网易云分享的ID
   autoplay: true  # 是否开启自动播放
 
 # 页面点击小红心
 clicklove:
-  enable: true
+  enable: false
 
 # GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
 github:
