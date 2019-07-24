@@ -130,6 +130,13 @@ github:
 pagefooter:
   litten: 码云:<a href="https://gitee.com/zhousiwei" target="_blank">思伟</a>
 
+# 开启百度站长平台主动推送(https://ziyuan.baidu.com/linksubmit/index)
+baidu_push: true
+
+# 版权声明
+# 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有copyright不为false的文章均有版权声明
+copyright_type: 2
+
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
