@@ -137,7 +137,7 @@ github:
 
 # 页脚 Litten
 pagefooter:
-  litten: 码云:<a href="https://gitee.com/zhousiwei" target="_blank">思伟</a>
+  litten: GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a>
 
 # 开启百度站长平台主动推送(https://ziyuan.baidu.com/linksubmit/index)
 baidu_push: false
