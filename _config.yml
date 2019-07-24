@@ -95,10 +95,10 @@ disqus: false
 #gitment_owner: false      #你的 GitHub ID
 gitment_owner: JoeyBling      #你的 GitHub ID
 gitment_remote: false  # 是否使用官方js(false可以提升访问速度)
-gitment_repo: 'JoeyBling.github.io'          #存储评论的 repo
+gitment_repo: 'yilia-plus-demo'          #存储评论的 repo
 gitment_oauth:
-  client_id: '084c0dc4233f68ab3ff1'           #client ID
-  client_secret: '39e1e3bf79509ad8670c81f57d3af0b4bb33255e'       #client secret
+  client_id: '1062039060f4021e8ae2'           #client ID
+  client_secret: '6ffbfcbd49ef5b123d524664657145a662179f34'       #client secret
 
 # 4、Giteement----【国内用户建议使用这个，相对比较快】
 # 基于码云的评论系统(https://gitee.com/zhousiwei/giteement)
