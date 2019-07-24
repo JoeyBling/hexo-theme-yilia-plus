@@ -1,0 +1,27 @@
+<% if (!index && post.comments && theme.giteement && theme.giteement.enable){ %>
+  <div id="giteement-ctn"></div>
+  <% if (theme.giteement && theme.giteement.remote){ %>
+    <!-- <link rel="stylesheet" href="https://giteement.oss-cn-beijing.aliyuncs.com/wd-discuss.css"> -->
+    <!-- <script src="https://giteement.oss-cn-beijing.aliyuncs.com/discuss_hexo.js"></script> -->
+    <link rel="stylesheet" href="https://giteement.oss-cn-beijing.aliyuncs.com/default.css">
+    <script src="https://giteement.oss-cn-beijing.aliyuncs.com/giteement.browser.js"></script>
+  <% } else { %>
+    <link rel="stylesheet" href="<%=config.root%>assets/default.css">
+    <script src="<%=config.root%>assets/giteement.browser.js"></script>
+  <% } %>
+  <script>
+  <!-- id: "<%= page.title %>" -->
+  var giteement = new Giteement({
+    id: '<%=page.date.format('YYYYMMDDHHmmss')%>',
+    owner: '<%=theme.giteement.giteeID%>',
+    repo: '<%=theme.giteement.repo%>',
+    backcall_uri: '<%=theme.giteement.redirect_uri%>',
+    oauth_uri: '<%=theme.giteement.oauth_uri%>',
+    oauth: {
+      client_id: '<%=theme.giteement.gitment_oauth.client_id%>',
+      client_secret: '<%=theme.giteement.gitment_oauth.client_secret%>'
+    },
+  })
+  giteement.render('giteement-ctn')
+  </script>
+<% } %>

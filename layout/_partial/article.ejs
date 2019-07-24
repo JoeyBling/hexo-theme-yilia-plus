@@ -52,7 +52,7 @@
     </div>
     <% } %>
 
-    <% if (((theme.copyright_type === 2 && !post.copyright) || (theme.copyright_type === 1 && post.copyright)) && !index){ %>
+    <% if (((theme.copyright_type === 2) || (theme.copyright_type === 1 && post.copyright)) && !index){ %>
       <div> 
         <ul class="post-copyright">
           <li>
@@ -65,7 +65,7 @@
           </li>
           <li>
             <strong>版权声明： </strong>
-            本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+            本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow" target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
           </li>
         </ul>
       </div>
@@ -134,10 +134,19 @@
 <% } %>
 
 <% if (theme.giteement && theme.giteement.enable){ %>
-<%- partial('post/gitment', {
+<%- partial('post/giteement', {
       key: post.slug,
       title: post.title,
       url: config.url+url_for(post.path)
     }) %>
 <% } %>
+
+<% if (theme.gitment_owner && theme.gitment_repo &&theme.gitment_oauth && theme.gitment_oauth.client_id && theme.gitment_oauth.client_secret){ %>
+  <%- partial('post/gitment', {
+      key: post.slug,
+      title: post.title,
+      url: config.url+url_for(post.path)
+    }) %>
+  <% } %>
+
 <% } %>

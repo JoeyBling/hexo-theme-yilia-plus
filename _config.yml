@@ -80,7 +80,7 @@ avatar: /img/head.jpg
 # 是否开启分享
 share_jia: true
 
-# 评论：1、畅言；2、Disqus；3、Gitment
+# 评论：1、畅言；2、Disqus；3、Gitment；4、Giteement
 # 不需要使用某项，直接设置值为false，或注释掉
 # 具体请参考wiki：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki
 
@@ -91,12 +91,22 @@ changyan_conf: false
 # 2、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 disqus: false
 
-# 3、Gitment----码云
+# 3、Gitment----基于GitHub的评论系统(关闭请设置gitment_owner为false)
+#gitment_owner: false      #你的 GitHub ID
+gitment_owner: JoeyBling      #你的 GitHub ID
+gitment_remote: false  # 是否使用官方js(false可以提升访问速度)
+gitment_repo: 'JoeyBling.github.io'          #存储评论的 repo
+gitment_oauth:
+  client_id: '084c0dc4233f68ab3ff1'           #client ID
+  client_secret: '39e1e3bf79509ad8670c81f57d3af0b4bb33255e'       #client secret
+
+# 4、Giteement----【国内用户建议使用这个，相对比较快】
+# 基于码云的评论系统(https://gitee.com/zhousiwei/giteement)
 giteement:
-  enable: false
-  # 是否使用官方js(可以提升访问速度)
+  enable: false  # 是否启用码云评论系统
+  # 是否使用官方js(false可以提升访问速度)
   remote: false
-  redirect_uri: https://zhousiwei.gitee.io/
+  redirect_uri: https://zhousiwei.gitee.io/   # 应用回调地址
   # oauth_uri: https://zhousiwei.gitee.io/
   # 不能更改
   oauth_uri: https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token
@@ -133,7 +143,7 @@ pagefooter:
 baidu_push: false
 
 # 版权声明
-# 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有copyright不为false的文章均有版权声明
+# 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
 copyright_type: 2
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
