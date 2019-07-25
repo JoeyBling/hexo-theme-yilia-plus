@@ -17,8 +17,8 @@ hexo-theme-yilia-plus
 7. 页脚 Litten自定义
 8. 添加版权声明
 9. 添加百度站长平台主动推送
-10. 集成 gitment 评论
-11. [集成码云评论](https://gitee.com/zhousiwei/giteement)
+10. 集成 gitment 评论 ➡️ [https://github.com/JoeyBling/yilia-plus-demo](https://github.com/JoeyBling/yilia-plus-demo)
+11. [集成码云评论](https://gitee.com/zhousiwei/giteement) ➡️ [https://gitee.com/zhousiwei/yilia-plus-demo](https://gitee.com/zhousiwei/yilia-plus-demo)
 12. 其他样式轻微调优
 
 > 如果有小伙伴有新功能的意见或者改进欢迎给我提意见和建议~
