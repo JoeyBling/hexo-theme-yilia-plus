@@ -7,6 +7,23 @@ hexo-theme-yilia-plus
 
 > **欢迎使用和Star支持，如使用过程中碰到问题，可以提出Issue，我会尽力完善**
 
+## 关于[hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia)主题在原基础上做了以下功能升级
+1. 手机端头像添加主页跳转链接
+2. 集成不蒜子访问量统计功能
+3. 网易云音乐插件
+4. 页面点击小红心效果
+5. 增加了多个SubNav导航图标展示
+6. 添加GitHub Ribbons(Fork me)
+7. 页脚 Litten自定义
+8. 添加版权声明
+9. 添加百度站长平台主动推送
+10. 集成 gitment 评论
+11. [集成码云评论](https://gitee.com/zhousiwei/giteement)
+12. 其他样式轻微调优
+
+> 如果有小伙伴有新功能的意见或者改进欢迎给我提意见和建议~
+
+
 ## 介绍
 - 功能还很少，欢迎各位给我提意见和建议~
 - **本项目源于：[https://github.com/litten/hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia "https://github.com/litten/hexo-theme-yilia")。向作者表示深深的敬意。**
