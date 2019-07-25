@@ -238,6 +238,17 @@ friends:
 aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
 ```
 
+### Hexo博客优化
+- [Hexo博客集成码云评论系统](https://www.jianshu.com/p/f5c4633524c7)
+- [Hexo博客集成Gitment评论](https://www.jianshu.com/p/ac7658cc912f)
+- [Hexo博客配置RSS插件](https://www.jianshu.com/p/2aaac7a19736)
+- [Hexo博客使用gulp压缩静态资源](https://www.jianshu.com/p/1123c89c491a)
+- [新增Hexo博客文章置顶功能](https://www.jianshu.com/p/a0afac70afc8)
+- [Hexo博客添加helper-live2d动态模型插件](https://www.jianshu.com/p/a7f4a42e4b49)
+- [Hexo博客添加访问量统计](https://www.jianshu.com/p/c9f83d5b893a)
+- [Hexo博客yilia主题添加背景音乐 （网易云音乐）](https://www.jianshu.com/p/f3fe5cb74d32)
+- [使用Hexo+GitHub搭建免费个人博客](https://www.jianshu.com/p/efebead840b2)
+
 ## 捐赠
 &#160;&#160;&#160;&#160;**如果感觉对您有帮助，请作者喝杯咖啡吧，请注明您的名字或者昵称，方便作者感谢o(*￣︶￣*)o**
 
