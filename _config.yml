@@ -131,11 +131,11 @@ music:
 
 # 页面点击小红心
 clicklove:
-  enable: false
+  enable: true
 
 # GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
 github:
-  url: https://github.com/JoeyBling/
+  url: https://github.com/JoeyBling/hexo-theme-yilia-plus
 
 # 页脚 Litten
 pagefooter:

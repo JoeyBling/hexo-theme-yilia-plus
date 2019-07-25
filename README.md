@@ -71,8 +71,7 @@ menu:
   主页: /
   技术笔记: https://zhousiwei.gitee.io/ibooks/
   个人简历: https://zhousiwei.gitee.io/cv/
-  Java: /tags/Java/
-  Linux: /tags/Linux/
+  日记本: /tags/日记本/
 
 # SubNav-导航
 subnav:
@@ -137,7 +136,7 @@ top: true
 
 # Miscellaneous
 # 百度统计
-baidu_analytics: '11a1b5a8f55434714171a862b19c459c'
+baidu_analytics: ''
 google_analytics: ''
 
 # 网站图标
@@ -149,7 +148,7 @@ avatar: /img/head.jpg
 # 是否开启分享
 share_jia: true
 
-# 评论：1、畅言；2、Disqus；3、Gitment
+# 评论：1、畅言；2、Disqus；3、Gitment；4、Giteement
 # 不需要使用某项，直接设置值为false，或注释掉
 # 具体请参考wiki：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki
 
@@ -160,19 +159,28 @@ changyan_conf: false
 # 2、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 disqus: false
 
-# 3、Gitment----码云
+# 3、Gitment----基于GitHub的评论系统(关闭请设置gitment_owner为false)
+# 关于如何集成:https://www.jianshu.com/p/ac7658cc912f
 #gitment_owner: false      #你的 GitHub ID
-#gitment_owner: JoeyBling      #你的 GitHub ID
-#gitment_repo: 'JoeyBling.github.io'          #存储评论的 repo
+gitment_owner: JoeyBling      #你的 GitHub ID
+gitment_remote: false  # 是否使用官方js(false可以提升访问速度)
+gitment_repo: 'yilia-plus-demo'          #存储评论的 repo
+gitment_oauth:
+  client_id: '1062039060f4021e8ae2'           #client ID
+  client_secret: '6ffbfcbd49ef5b123d524664657145a662179f34'       #client secret
+
+# 4、Giteement----【国内用户建议使用这个，相对比较快】
+# 关于如何集成:https://www.jianshu.com/p/f5c4633524c7
+# 基于码云的评论系统(https://gitee.com/zhousiwei/giteement)
 giteement:
-  enable: true
-  # 是否使用官方js(可以提升访问速度)
+  enable: false  # 是否启用码云评论系统
+  # 是否使用官方js(false可以提升访问速度)
   remote: false
-  redirect_uri: https://zhousiwei.gitee.io/
+  redirect_uri: https://zhousiwei.gitee.io/   # 应用回调地址(请和配置的第三方应用保持一致)
   # oauth_uri: https://zhousiwei.gitee.io/
-  # 不能更改
+  # 不能更改(网上开源项目https://github.com/Rob--W/cors-anywhere作者提供的专门用来跨域服务器的配置)
   oauth_uri: https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token
-  giteeID: zhousiwei
+  giteeID: zhousiwei  # 你的码云账号英文名
   # 存储评论的 repo
   repo: zhousiwei
   gitment_oauth:
@@ -185,7 +193,7 @@ busuanzi:
 
 # 网易云音乐插件
 music:
-  enable: true
+  enable: false
   #id: 1332647902  # 网易云分享的ID
   autoplay: true  # 是否开启自动播放
 
@@ -195,11 +203,18 @@ clicklove:
 
 # GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
 github:
-  url: https://github.com/JoeyBling/
+  url: https://github.com/JoeyBling/hexo-theme-yilia-plus
 
 # 页脚 Litten
 pagefooter:
-  litten: 码云:<a href="https://gitee.com/zhousiwei" target="_blank">思伟</a>
+  litten: GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a>
+
+# 开启百度站长平台主动推送(https://ziyuan.baidu.com/linksubmit/index)
+baidu_push: false
+
+# 版权声明
+# 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
+copyright_type: 2
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
