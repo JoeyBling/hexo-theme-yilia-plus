@@ -88,7 +88,7 @@ share_jia: true
 changyan_appid: false
 changyan_conf: false
 
-# 2、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
+# 2、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia-plus的
 disqus: false
 
 # 3、Gitment----基于GitHub的评论系统(关闭请设置gitment_owner为false)
