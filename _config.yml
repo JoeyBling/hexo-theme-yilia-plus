@@ -92,6 +92,7 @@ changyan_conf: false
 disqus: false
 
 # 3、Gitment----基于GitHub的评论系统(关闭请设置gitment_owner为false)
+# 关于如何集成:https://www.jianshu.com/p/ac7658cc912f
 #gitment_owner: false      #你的 GitHub ID
 gitment_owner: JoeyBling      #你的 GitHub ID
 gitment_remote: false  # 是否使用官方js(false可以提升访问速度)
@@ -101,16 +102,17 @@ gitment_oauth:
   client_secret: '6ffbfcbd49ef5b123d524664657145a662179f34'       #client secret
 
 # 4、Giteement----【国内用户建议使用这个，相对比较快】
+# 关于如何集成:https://www.jianshu.com/p/f5c4633524c7
 # 基于码云的评论系统(https://gitee.com/zhousiwei/giteement)
 giteement:
   enable: false  # 是否启用码云评论系统
   # 是否使用官方js(false可以提升访问速度)
   remote: false
-  redirect_uri: https://zhousiwei.gitee.io/   # 应用回调地址
+  redirect_uri: https://zhousiwei.gitee.io/   # 应用回调地址(请和配置的第三方应用保持一致)
   # oauth_uri: https://zhousiwei.gitee.io/
-  # 不能更改
+  # 不能更改(网上开源项目https://github.com/Rob--W/cors-anywhere作者提供的专门用来跨域服务器的配置)
   oauth_uri: https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token
-  giteeID: zhousiwei
+  giteeID: zhousiwei  # 你的码云账号英文名
   # 存储评论的 repo
   repo: zhousiwei
   gitment_oauth:
