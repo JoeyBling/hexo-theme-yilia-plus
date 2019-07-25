@@ -7,7 +7,7 @@ hexo-theme-yilia-plus
 
 > **欢迎使用和Star支持，如使用过程中碰到问题，可以提出Issue，我会尽力完善**
 
-## 关于[hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia)主题在原基础上做了以下功能升级
+## 关于[hexo-theme-yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus)主题在原基础上做了以下功能升级
 1. 手机端头像添加主页跳转链接
 2. 集成不蒜子访问量统计功能
 3. 网易云音乐插件
