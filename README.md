@@ -273,6 +273,7 @@ aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众�
 ### Hexo博客优化
 - [Hexo博客集成码云评论系统](https://www.jianshu.com/p/f5c4633524c7)
 - [Hexo博客集成Gitment评论](https://www.jianshu.com/p/ac7658cc912f)
+- [Hexo 编译文档时 JS或HTML 混乱解决方案](https://www.jianshu.com/p/2a8b850d3f92)
 - [Hexo博客配置RSS插件](https://www.jianshu.com/p/2aaac7a19736)
 - [Hexo博客使用gulp压缩静态资源](https://www.jianshu.com/p/1123c89c491a)
 - [新增Hexo博客文章置顶功能](https://www.jianshu.com/p/a0afac70afc8)
