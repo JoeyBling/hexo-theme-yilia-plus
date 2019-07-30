@@ -1,0 +1,42 @@
+# en: English
+categories: Categories
+search: Search
+tags: Tags
+tagcloud: Tag Cloud
+tweets: Tweets
+prev: Prev
+next: Next
+comment: Comments
+archive_a: Archives
+archive_b: "Archives: %s"
+page: Page % d
+recent_posts: Recent Posts
+newer: Newer
+older: Older
+share: Share
+powered_by: Powered by
+rss_feed: RSS Feed
+category: Category
+tag: Tag
+
+# 如果使用默认提示，请设置'NULL'
+subnav:
+  title:
+    github: GitHub
+    gitee: gitee
+    jianshu: jianshu
+    csdn: CSDN
+    rss: RSS
+    zhihu: zhihu
+    qq: QQ
+    weixin: wechat
+    weibo: weibo
+    douban: douban
+    segmentfault: segmentfault
+    bilibili: bilibili
+    acfun: 'NULL'
+    mail: 'NULL'  # 邮件联系
+    facebook: Facebook
+    google: Google
+    twitter: twitter
+    linkedin: linkedin

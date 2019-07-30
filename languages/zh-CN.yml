@@ -1,3 +1,4 @@
+# zh-CN: Chinese (Simplified) 大陆简体
 categories: 分类
 search: 搜索
 tags: 标签
@@ -17,3 +18,25 @@ powered_by: Powered by
 rss_feed: RSS Feed
 category: Category
 tag: Tag
+
+# 如果使用默认提示，请设置'NULL'
+subnav:
+  title:
+    github: GitHub
+    gitee: 码云
+    jianshu: 简书
+    csdn: CSDN
+    rss: RSS订阅
+    zhihu: 知乎
+    qq: QQ
+    weixin: 微信
+    weibo: 微博
+    douban: 豆瓣
+    segmentfault: SegmentFault
+    bilibili: 哔哩哔哩
+    acfun: 'NULL'
+    mail: 'NULL'  # 邮件联系
+    facebook: Facebook
+    google: Google
+    twitter: Twitter
+    linkedin: 领英

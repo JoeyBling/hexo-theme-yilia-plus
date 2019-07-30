@@ -1,16 +1,15 @@
-# zh-TW: Chinese (Traditional) 台灣正體
-# 转换帮助工具:https://brushes8.com/zhong-wen-jian-ti-fan-ti-zhuan-huan
-categories: 分類
-search: 搜尋
-tags: 標籤
-tagcloud: 標籤雲
+# zh-Hans: Chinese (Simplified) 大陆简体
+categories: 分类
+search: 搜索
+tags: 标签
+tagcloud: 标签云
 tweets: 推文
-prev: 上一頁
-next: 下一頁
+prev: 上一页
+next: 下一页
 comment: 留言
-archive_a: 彙整
-archive_b: 彙整：%s
-page: 第 %d 頁
+archive_a: 归档
+archive_b: 归档：%s
+page: 第 %d 页
 recent_posts: 最新文章
 newer: Newer
 older: Older
@@ -24,20 +23,20 @@ tag: Tag
 subnav:
   title:
     github: GitHub
-    gitee: 碼雲
-    jianshu: 簡書
+    gitee: 码云
+    jianshu: 简书
     csdn: CSDN
-    rss: RSS訂閱
+    rss: RSS订阅
     zhihu: 知乎
     qq: QQ
     weixin: 微信
     weibo: 微博
     douban: 豆瓣
     segmentfault: SegmentFault
-    bilibili: 嗶哩嗶哩
+    bilibili: 哔哩哔哩
     acfun: 'NULL'
     mail: 'NULL'  # 邮件联系
     facebook: Facebook
     google: Google
     twitter: Twitter
-    linkedin: 領英
+    linkedin: 领英
