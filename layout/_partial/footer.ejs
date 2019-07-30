@@ -2,14 +2,19 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+    		&copy; <% if (theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY')) { %><%- theme.since%>-<% } %><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
     	</div>
       	<div class="footer-right">
       		<% if (theme.pagefooter && theme.pagefooter.litten){ %><%-theme.pagefooter.litten%><% } %> by Litten
       	</div>
     </div>
   </div>
+  
   <% if (theme.busuanzi && theme.busuanzi.enable){ %>
+	<script src="<%=config.root%>assets/busuanzi.pure.js"></script>
+  	<!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+  <% } %>
+  <% if (theme.busuanzi && theme.busuanzi.enable && theme.busuanzi.site_visit){ %>
   	<!-- 不蒜子统计 -->
 	<span id="busuanzi_container_site_pv" style="display:none">
 		本站总访问量<span id="busuanzi_value_site_pv"></span>次	
@@ -18,7 +23,5 @@
   	<span id="busuanzi_container_site_uv" style='display:none'>
   		本站访客数<span id="busuanzi_value_site_uv"></span>人
   	</span>
-	<script src="<%=config.root%>assets/busuanzi.pure.js"></script>
-  	<!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
   <% } %>
 </footer>

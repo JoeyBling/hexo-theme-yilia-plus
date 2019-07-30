@@ -19,7 +19,11 @@ hexo-theme-yilia-plus
 9. 添加百度站长平台主动推送
 10. 集成 gitment 评论 ➡️ [https://github.com/JoeyBling/yilia-plus-demo](https://github.com/JoeyBling/yilia-plus-demo)
 11. [集成码云评论](https://gitee.com/zhousiwei/giteement) ➡️ [https://gitee.com/zhousiwei/yilia-plus-demo](https://gitee.com/zhousiwei/yilia-plus-demo)
-12. 其他样式轻微调优
+12. 添加网站成立年份
+13. 页面加载进度条
+14. 添加苹果图标
+15. 标签页标题切换功能
+16. 其他样式轻微调优、社交图标优化
 
 > 如果有小伙伴有新功能的意见或者改进欢迎给我提意见和建议~
 

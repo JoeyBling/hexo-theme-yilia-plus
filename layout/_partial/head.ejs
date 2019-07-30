@@ -35,9 +35,12 @@
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
+  <% if (theme.apple_touch_icon){ %>
+    <link rel="apple-touch-icon" href= "<%- theme.apple_touch_icon %>">
+  <% } %>
   <%- partial('css') %>
   <style type="text/css">
-  <% var defaultCtnBg = 'linear-gradient(200deg,#a0cfe4,#e8c37e)' %>
+    <% var defaultCtnBg = 'linear-gradient(200deg,#a0cfe4,#e8c37e)' %>
     #container.show {
       background: <%= theme.style && theme.style.slider ? theme.style.slider : defaultCtnBg %>;
     }
@@ -49,4 +52,10 @@
  	 <script src="<%=config.root%>assets/clicklove.js"></script>
   <% } %>
   <%- partial('baidu-push') %>
+
+  <% if (theme.progressBar.enable) { %>
+    <script src="<%=config.root%>assets/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/<%= theme.progressBar.color || 'blue'%>/pace-theme-<%= theme.progressBar.type || 'minimal'%>.css" rel="stylesheet">
+  <% } %>
+
 </head>

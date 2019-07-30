@@ -119,9 +119,11 @@ giteement:
     client_id: ''           #client ID
     client_secret: ''       #client secret
 
-# 是否开启访问量统计功能(不蒜子)
+# 访问量统计功能(不蒜子)
 busuanzi:
   enable: true
+  site_visit: true  # 站点访问量显示
+  article_visit: true  # 文章访问量显示
 
 # 网易云音乐插件
 music:
@@ -147,6 +149,29 @@ baidu_push: false
 # 版权声明
 # 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
 copyright_type: 2
+
+# 网站成立年份(默认为 2018，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
+since: 2018
+
+# Progress Bar | 页面加载进度条
+# Demo: http://github.hubspot.com/pace/docs/welcome/
+# type: barber-shop|big-counter|bounce|center-atom|center-circle|
+#       center-radar|center-simple|corner-indicator|flash|flat-top|
+#       loading-bar|mac-osx|minimal
+# color: black|blue|green|orange|pink|purple|red|silver|white|yellow|
+progressBar:
+  enable: false
+  type: 'minimal'  # Keep Quotes | 保留引号避免出错(某些type会导致样式重叠排版错误)
+  color: blue
+
+# Apple Touch icon 苹果图标(关闭请设置为false)
+apple_touch_icon: '/apple-touch-icon-180x180.png'
+
+# Tab Title Change | 标签页标题切换
+tab_title_change: 
+  enable: true
+  left_tab_title: '(つェ⊂) 我藏好了哦~ '
+  return_tab_title: '(*´∇｀*) 被你发现啦~ '
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
