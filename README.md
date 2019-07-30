@@ -126,7 +126,7 @@ subnav:
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  #mail: "mailto:litten225@qq.com"
+  mail: "mailto:zhousiwei0911@qq.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -136,8 +136,8 @@ subnav:
 rss: /atom.xml
 
 # 是否需要修改 root 路径
-# 如果您的网站存放在子目录中，例如 http://yoursite.com/blog
-# 请将您的 url 设为 http://yoursite.com/blog 并把 / 设为 /blog/
+# 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
+# 请将您的 url 设为 http://yoursite.com/blog 并把 / 设为 /blog/。
 root: /
 
 # Content
@@ -274,10 +274,18 @@ progressBar:
 apple_touch_icon: '/apple-touch-icon-180x180.png'
 
 # Tab Title Change | 标签页标题切换
-tab_title_change: 
+tab_title_change:
   enable: true
   left_tab_title: '(つェ⊂) 我藏好了哦~ '
   return_tab_title: '(*´∇｀*) 被你发现啦~ '
+
+# 是否开启字数统计(关闭请设置enable为false)
+# 必须安装`hexo-wordcount`插件，在根目录执行`npm i hexo-wordcount --save`
+# 也可以单独在md文件里Front-matter设置`no_word_count: true`属性，来自定义关闭字数统计
+word_count:
+  enable: true
+  # 只在文章详情显示(不在首页显示)
+  only_article_visit: true
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
