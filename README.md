@@ -16,7 +16,8 @@ hexo-theme-yilia-plus
 #### [立即体验](#三开始使用)
 
 > **欢迎使用和Star支持，如使用过程中碰到问题，可以提出Issue，我会尽力完善**
-> **同时也欢迎加入爱好者一起加入维护此项目**
+
+> **同时也欢迎相同爱好者加入一起维护此项目**
 
 ## 关于[hexo-theme-yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus)主题在原基础上做了以下功能升级
 1. 手机端头像添加主页跳转链接
