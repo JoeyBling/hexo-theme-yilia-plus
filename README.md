@@ -1,6 +1,22 @@
 hexo-theme-yilia-plus
 ================
 
+![star](https://img.shields.io/github/stars/JoeyBling/hexo-theme-yilia-plus "star")
+
+![fork](https://img.shields.io/github/forks/JoeyBling/hexo-theme-yilia-plus "fork")
+
+![GitHub last commit](https://img.shields.io/github/last-commit/JoeyBling/hexo-theme-yilia-plus.svg?label=commits "GitHub last commit")
+
+![issues](https://img.shields.io/github/issues/JoeyBling/hexo-theme-yilia-plus "issues")
+
+[![Author](https://img.shields.io/badge/Author-JoeyBling-red.svg "Author")](https://zhousiwei.gitee.io "Author")
+
+[![LICENSE](https://img.shields.io/github/license/JoeyBling/hexo-theme-yilia-plus "LICENSE")](./LICENSE "LICENSE")
+
+![hexo](https://img.shields.io/badge/hexo-blue.svg "hexo")
+
+
+
 &#160;&#160;&#160;&#160;此项目是根据[hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia)主题做了一些优化和改动，写这个项目的初衷就是深入学习`Hexo`。使用`yilia`主题可以快速迁移到`yilia-plus`
 
 #### [立即体验](#三开始使用)
@@ -58,6 +74,12 @@ hexo-theme-yilia-plus
 
 &#160;&#160;&#160;&#160;为了性能和开发工程化考虑，[yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus) 需要使用`webpack`进行构建生成。
 如果您对主题有一些定制化的需求，请参考wiki[《yilia-plus源码目录结构及构建须知》](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/yilia-plus%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E5%8F%8A%E6%9E%84%E5%BB%BA%E9%A1%BB%E7%9F%A5)
+
+#### 评论支持
+- [Gitment](https://github.com/imsun/gitment)
+- [基于码云的评论系统](https://gitee.com/zhousiwei/giteement)
+- DISQUS
+- 搜狐畅言 
 
 ## 三、开始使用
 
@@ -119,8 +141,8 @@ subnav:
 rss: /atom.xml
 
 # 是否需要修改 root 路径
-# 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
-# 请将您的 url 设为 http://yoursite.com/blog 并把 / 设为 /blog/。
+# 如果您的网站存放在子目录中，例如 http://yoursite.com/blog
+# 请将您的 url 设为 http://yoursite.com/blog 并把 / 设为 /blog/
 root: /
 
 # Content
@@ -320,4 +342,4 @@ aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众�
 
 ## License
 
-[Apache License](./LICENSE)
+[![LICENSE](https://img.shields.io/github/license/JoeyBling/hexo-theme-yilia-plus "LICENSE")](./LICENSE "LICENSE")
