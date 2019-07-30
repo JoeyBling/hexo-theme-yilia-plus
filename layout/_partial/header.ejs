@@ -20,7 +20,7 @@
       </nav>
       <nav id="sub-nav">
         <% if (theme.rss){ %>
-          <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="<%- url_for(theme.rss) %>" title="RSS Feed"></a>
         <% } %>
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>

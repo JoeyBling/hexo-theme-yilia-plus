@@ -36,13 +36,13 @@
                 <div class="reward-box">
                   <% if(theme.alipay) {%>
                   <div class="reward-box-item">
-                    <img class="reward-img" src="<%= theme.alipay%>">
+                    <img class="reward-img" src="<%- url_for(theme.alipay) %>">
                     <span class="reward-type">支付宝</span>
                   </div>
                   <% } %>
                   <% if(theme.weixin) {%>
                   <div class="reward-box-item">
-                    <img class="reward-img" src="<%= theme.weixin%>">
+                    <img class="reward-img" src="<%- url_for(theme.weixin) %>">
                     <span class="reward-type">微信</span>
                   </div>
                   <% } %>

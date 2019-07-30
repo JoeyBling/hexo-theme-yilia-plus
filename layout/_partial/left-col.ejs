@@ -3,7 +3,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="<%=theme.root%>" class="profilepic">
-			<img src="<%=theme.avatar%>" class="js-avatar">
+			<img src="<%- url_for(theme.avatar) %>" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="<%=theme.root%>"><%=theme.author%></a></h1>
