@@ -2,17 +2,11 @@ hexo-theme-yilia-plus
 ================
 
 ![star](https://img.shields.io/github/stars/JoeyBling/hexo-theme-yilia-plus "star")
-
 ![fork](https://img.shields.io/github/forks/JoeyBling/hexo-theme-yilia-plus "fork")
-
 ![GitHub last commit](https://img.shields.io/github/last-commit/JoeyBling/hexo-theme-yilia-plus.svg?label=commits "GitHub last commit")
-
 ![issues](https://img.shields.io/github/issues/JoeyBling/hexo-theme-yilia-plus "issues")
-
 [![Author](https://img.shields.io/badge/Author-JoeyBling-red.svg "Author")](https://zhousiwei.gitee.io "Author")
-
 [![LICENSE](https://img.shields.io/github/license/JoeyBling/hexo-theme-yilia-plus "LICENSE")](./LICENSE "LICENSE")
-
 ![hexo](https://img.shields.io/badge/hexo-blue.svg "hexo")
 
 
