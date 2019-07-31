@@ -90,7 +90,14 @@
         <ul class="search-ul">
           <% for (var i in theme.friends){ %>
             <li class="search-li">
-              <a href="<%- url_for(theme.friends[i]) %>" target="_blank" class="search-title"><i class="icon-quo-left icon"></i><%= i %></a>
+              <a href="<%- url_for(theme.friends[i].url) %>" target="_blank" class="search-title" <% if (theme.friends[i].description){ %>title="<%= theme.friends[i].description %>"<% } %></a>
+                <% if (theme.friends[i].img){ %>
+                  <img src="<%- url_for(theme.friends[i].img) %>" style="width: 2em;height: 2em;">
+                <% } else { %>
+                  <i class="icon-link icon"></i>
+                <% } %>
+                <%= i %>
+              </a>
             </li>
           <% } %>
         </ul>

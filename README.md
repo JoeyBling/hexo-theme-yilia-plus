@@ -36,7 +36,8 @@ hexo-theme-yilia-plus
 14. 添加苹果图标
 15. 标签页标题切换功能
 16. 添加字数统计功能
-17. 其他样式轻微调优、社交图标优化
+17. 友情链接优化展示
+18. 其他样式轻微调优、社交图标优化
 
 > 如果有小伙伴有新功能的意见或者改进欢迎给我提意见和建议~
 
@@ -314,13 +315,22 @@ smart_menu:
 
 # 友情链接
 friends:
-  技术笔记: https://zhousiwei.gitee.io/ibooks/
-  GitHub: https://github.com/JoeyBling
-  码云: https://gitee.com/zhousiwei
-  简书: https://www.jianshu.com/u/02cbf31a043a
-  CSDN: https://blog.csdn.net/qq_30930805
-  知乎: https://www.zhihu.com/people/joeybling
-  微博: http://weibo.com/jayinfo
+  技术笔记:
+    url: https://zhousiwei.gitee.io/ibooks/
+    img: https://zhousiwei.gitee.io/ibooks/favicon.ico
+    description: 记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析
+  GitHub:
+    url: https://github.com/JoeyBling
+  码云:
+    url: https://gitee.com/zhousiwei
+  简书:
+    url: https://www.jianshu.com/u/02cbf31a043a
+  CSDN:
+    url: https://blog.csdn.net/qq_30930805
+  知乎:
+    url: https://www.zhihu.com/people/joeybling
+  微博:
+    url: http://weibo.com/jayinfo
 
 # 关于我
 aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
