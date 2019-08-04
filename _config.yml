@@ -7,20 +7,20 @@ menu:
 
 # SubNav-导航
 subnav:
-  github: "https://github.com/JoeyBling"
-  gitee: "https://gitee.com/zhousiwei" # 码云
-  jianshu: "https://www.jianshu.com/u/02cbf31a043a" #简书
-  csdn: "https://blog.csdn.net/qq_30930805"
+  github: "#"
+  #gitee: "#" # 码云
+  #jianshu: "#" #简书
+  #csdn: "#"
   #rss: "#"
-  zhihu: "https://zhihu.com/people/joeybling"
-  qq: "img/2434387555.jpg"
-  weixin: "img/weixin_.png"
-  weibo: "http://weibo.com/jayinfo"
+  #zhihu: "#"
+  #qq: "img/2434387555.jpg"
+  #weixin: "img/weixin_.png"
+  #weibo: "#"
   #douban: "#"
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  mail: "mailto:zhousiwei0911@qq.com"
+  #mail: "mailto:zhousiwei0911@qq.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"

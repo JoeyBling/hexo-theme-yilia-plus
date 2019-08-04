@@ -116,20 +116,20 @@ menu:
 
 # SubNav-导航
 subnav:
-  github: "https://github.com/JoeyBling"
-  gitee: "https://gitee.com/zhousiwei" # 码云
-  jianshu: "https://www.jianshu.com/u/02cbf31a043a" #简书
-  csdn: "https://blog.csdn.net/qq_30930805"
+  github: "#"
+  #gitee: "#" # 码云
+  #jianshu: "#" #简书
+  #csdn: "#"
   #rss: "#"
-  zhihu: "https://zhihu.com/people/joeybling"
-  qq: "img/2434387555.jpg"
-  weixin: "img/weixin_.png"
-  weibo: "http://weibo.com/jayinfo"
+  #zhihu: "#"
+  #qq: "img/2434387555.jpg"
+  #weixin: "img/weixin_.png"
+  #weibo: "#"
   #douban: "#"
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  mail: "mailto:zhousiwei0911@qq.com"
+  #mail: "mailto:zhousiwei0911@qq.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -202,13 +202,12 @@ disqus: false
 
 # 3、Gitment----基于GitHub的评论系统(关闭请设置gitment_owner为false)
 # 关于如何集成:https://www.jianshu.com/p/ac7658cc912f
-#gitment_owner: false      #你的 GitHub ID
-gitment_owner: JoeyBling      #你的 GitHub ID
+gitment_owner: false      #你的 GitHub ID
 gitment_remote: false  # 是否使用官方js(false可以提升访问速度)
-gitment_repo: 'yilia-plus-demo'          #存储评论的 repo
+gitment_repo: ''          #存储评论的 repo
 gitment_oauth:
-  client_id: '1062039060f4021e8ae2'           #client ID
-  client_secret: '6ffbfcbd49ef5b123d524664657145a662179f34'       #client secret
+  client_id: ''           #client ID
+  client_secret: ''       #client secret
 
 # 4、Giteement----【国内用户建议使用这个，相对比较快】
 # 关于如何集成:https://www.jianshu.com/p/f5c4633524c7
@@ -217,13 +216,12 @@ giteement:
   enable: false  # 是否启用码云评论系统
   # 是否使用官方js(false可以提升访问速度)
   remote: false
-  redirect_uri: https://zhousiwei.gitee.io/   # 应用回调地址(请和配置的第三方应用保持一致)
-  # oauth_uri: https://zhousiwei.gitee.io/
+  redirect_uri: ''   # 应用回调地址(请和配置的第三方应用保持一致)
   # 不能更改(网上开源项目https://github.com/Rob--W/cors-anywhere作者提供的专门用来跨域服务器的配置)
   oauth_uri: https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token
-  giteeID: zhousiwei  # 你的码云账号英文名
+  giteeID: ''  # 你的码云账号英文名
   # 存储评论的 repo
-  repo: zhousiwei
+  repo: ''
   gitment_oauth:
     client_id: ''           #client ID
     client_secret: ''       #client secret
@@ -286,7 +284,7 @@ tab_title_change:
 # 必须安装`hexo-wordcount`插件，在根目录执行`npm i hexo-wordcount --save`
 # 也可以单独在md文件里Front-matter设置`no_word_count: true`属性，来自定义关闭字数统计
 word_count:
-  enable: true
+  enable: false
   # 只在文章详情显示(不在首页显示)
   only_article_visit: true
 
