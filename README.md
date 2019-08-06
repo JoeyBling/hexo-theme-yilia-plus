@@ -38,6 +38,7 @@ hexo-theme-yilia-plus
 16. 添加字数统计功能
 17. 友情链接优化展示
 18. 其他样式轻微调优、社交图标优化
+19. [fix bugs](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/fix-bugs-record%EF%BC%88%E4%BF%AE%E5%A4%8Dbug%E8%AE%B0%E5%BD%95%EF%BC%89)
 
 > 如果有小伙伴有新功能的意见或者改进欢迎给我提意见和建议~
 
