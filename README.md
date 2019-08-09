@@ -6,9 +6,9 @@ hexo-theme-yilia-plus
 ![GitHub last commit](https://img.shields.io/github/last-commit/JoeyBling/hexo-theme-yilia-plus.svg?label=commits "GitHub last commit")
 ![issues](https://img.shields.io/github/issues/JoeyBling/hexo-theme-yilia-plus "issues")
 [![Author](https://img.shields.io/badge/Author-JoeyBling-red.svg "Author")](https://zhousiwei.gitee.io "Author")
-[![LICENSE](https://img.shields.io/github/license/JoeyBling/hexo-theme-yilia-plus "LICENSE")](./LICENSE "LICENSE")
 ![hexo](https://img.shields.io/badge/hexo-blue.svg "hexo")
-
+[![博客搭建交流群](https://img.shields.io/badge/QQ群-422625065-red.svg "博客搭建交流群")](https://jq.qq.com/?_wv=1027&k=58Ypj9z "博客搭建交流群")
+[![LICENSE](https://img.shields.io/github/license/JoeyBling/hexo-theme-yilia-plus "LICENSE")](./LICENSE "LICENSE")
 
 
 &#160;&#160;&#160;&#160;此项目是根据[hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia)主题做了一些优化和改动，写这个项目的初衷就是深入学习`Hexo`。使用`yilia`主题可以快速迁移到`yilia-plus`
@@ -248,6 +248,7 @@ github:
   url: https://github.com/JoeyBling/hexo-theme-yilia-plus
 
 # 页脚 Litten
+# 帮助我们让更多人可以更方便使用Hexo，请尽量不要修改此主题配置
 pagefooter:
   litten: GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a>
 
