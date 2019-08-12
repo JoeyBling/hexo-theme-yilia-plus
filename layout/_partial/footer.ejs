@@ -11,7 +11,7 @@
   </div>
   
   <% if (theme.busuanzi && theme.busuanzi.enable){ %>
-	<script src="<%=config.root%>assets/busuanzi.pure.js"></script>
+	<script src="<%- url_for('lib/busuanzi.pure.js') %>"></script>
   	<!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
   <% } %>
   <% if (theme.busuanzi && theme.busuanzi.enable && theme.busuanzi.site_visit){ %>

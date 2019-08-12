@@ -2,7 +2,7 @@
   <% if (theme.giteement && theme.giteement.remote){ %>
     <script src="https://giteement.oss-cn-beijing.aliyuncs.com/oauthcallback.browser.js"></script>
   <% } else { %>
-    <script src="<%=config.root%>assets/oauthcallback.browser.js"></script>
+    <script src="<%- url_for('lib/oauthcallback.browser.js') %>"></script>
   <% } %>
   <script>
     Oauthcallback();

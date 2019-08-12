@@ -3,7 +3,7 @@ hexo-theme-yilia-plus
 
 ![star](https://img.shields.io/github/stars/JoeyBling/hexo-theme-yilia-plus "star")
 ![fork](https://img.shields.io/github/forks/JoeyBling/hexo-theme-yilia-plus "fork")
-![GitHub last commit](https://img.shields.io/github/last-commit/JoeyBling/hexo-theme-yilia-plus.svg?label=commits "GitHub last commit")
+![GitHub Last Commit](https://img.shields.io/github/last-commit/JoeyBling/hexo-theme-yilia-plus.svg?label=commits "GitHub Last Commit")
 ![issues](https://img.shields.io/github/issues/JoeyBling/hexo-theme-yilia-plus "issues")
 [![Author](https://img.shields.io/badge/Author-JoeyBling-red.svg "Author")](https://zhousiwei.gitee.io "Author")
 ![hexo](https://img.shields.io/badge/hexo-blue.svg "hexo")
@@ -36,9 +36,10 @@ hexo-theme-yilia-plus
 14. 添加苹果图标
 15. 标签页标题切换功能
 16. 添加字数统计功能
-17. 友情链接优化展示
-18. 其他样式轻微调优、社交图标优化
-19. [fix bugs](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/fix-bugs-record%EF%BC%88%E4%BF%AE%E5%A4%8Dbug%E8%AE%B0%E5%BD%95%EF%BC%89)
+17. 添加文字输入特效
+18. 友情链接优化展示
+19. 其他样式轻微调优、社交图标优化
+20. [fix bugs](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/fix-bugs-record%EF%BC%88%E4%BF%AE%E5%A4%8Dbug%E8%AE%B0%E5%BD%95%EF%BC%89)
 
 > 如果有小伙伴有新功能的意见或者改进欢迎给我提意见和建议~
 
@@ -52,7 +53,7 @@ hexo-theme-yilia-plus
 
 如果想体验手机浏览效果，可以扫一下二维码：
 
-![](./images/qrcode.png)
+![](./examples/images/qrcode.png)
 
 ----------
 
@@ -67,7 +68,7 @@ hexo-theme-yilia-plus
 
 #### **常规**
 
-![常规](./images/web.png)
+![常规](./examples/images/web.png)
 
 ## 二、开发者
 
@@ -86,8 +87,7 @@ hexo-theme-yilia-plus
 
 ```bash
 cd ./themes/
-git clone https://github.com/JoeyBling/hexo-theme-yilia-plus.git
-mv hexo-theme-yilia-plus yilia-plus
+git clone https://github.com/JoeyBling/hexo-theme-yilia-plus.git ./yilia-plus
 ```
 
 #### 2、配置
@@ -118,8 +118,8 @@ menu:
 # SubNav-导航
 subnav:
   github: "#"
-  #gitee: "#" # 码云
-  #jianshu: "#" #简书
+  gitee: "#" # 码云
+  jianshu: "#" #简书
   #csdn: "#"
   #rss: "#"
   #zhihu: "#"
@@ -290,6 +290,15 @@ word_count:
   # 只在文章详情显示(不在首页显示)
   only_article_visit: true
 
+# 文字输入特效
+# https://github.com/disjukr/activate-power-mode
+activate_power_mode:
+  enable: true
+  # 使输入模式丰富多彩
+  colorful: true
+  # 是否开启摇动
+  shake: false
+
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
@@ -352,7 +361,7 @@ aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众�
 
 | 微信 | 支付宝 |
 | :---: | :---: |
-| ![](./images/weixin.png) | ![](./images/alipay.jpeg) |
+| ![](./examples/images/weixin.png) | ![](./examples/images/alipay.jpeg) |
 
 ## License
 

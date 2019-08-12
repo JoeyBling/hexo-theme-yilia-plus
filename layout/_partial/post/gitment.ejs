@@ -5,8 +5,8 @@
     <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
   <% } else { %>
     <!-- 中文 -->
-    <link rel="stylesheet" href="<%=config.root%>assets/gitment.css">
-    <script src="<%=config.root%>assets/gitment.js"></script>
+    <link rel="stylesheet" href="<%- url_for('lib/gitment.css') %>">
+    <script src="<%- url_for('lib/gitment.js') %>"></script>
   <% } %>
   <script>
     <!-- id: "<%= page.title %>" -->

@@ -15,7 +15,7 @@
 		<nav class="header-menu">
 			<ul>
 			<% for (var i in theme.menu){ %>
-				<li><a href="<%- url_for(theme.menu[i]) %>" target="_blank" ><%= i %></a></li>
+				<li><a href="<%- url_for(theme.menu[i]) %>" <% if (theme.open_in_new){ %>target="_blank"<% } %>><%= i %></a></li>
 	        <%}%>
 			</ul>
 		</nav>

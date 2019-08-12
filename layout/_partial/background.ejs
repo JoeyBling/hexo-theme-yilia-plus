@@ -1,6 +1,6 @@
 <% if (theme.background_image){ %>
     <!-- 弃用 -->
-	<script src="<%=config.root%>assets/jquery-2.1.4.min.js"></script>
+	<script src="<%- url_for('lib/jquery-2.1.4.min.js') %>"></script>
     <script>
         $(document).ready(function() {
             var iPad = window.navigator.userAgent.indexOf('iPad');

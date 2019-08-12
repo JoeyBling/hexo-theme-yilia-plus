@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://giteement.oss-cn-beijing.aliyuncs.com/default.css">
     <script src="https://giteement.oss-cn-beijing.aliyuncs.com/giteement.browser.js"></script>
   <% } else { %>
-    <link rel="stylesheet" href="<%=config.root%>assets/default.css">
-    <script src="<%=config.root%>assets/giteement.browser.js"></script>
+    <link rel="stylesheet" href="<%- url_for('lib/default.css') %>">
+    <script src="<%- url_for('lib/giteement.browser.js') %>"></script>
   <% } %>
   <script>
   <!-- id: "<%= page.title %>" -->

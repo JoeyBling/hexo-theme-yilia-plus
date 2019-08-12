@@ -45,14 +45,14 @@
   </style>
   <%- partial('google-analytics') %>
   <%- partial('baidu-analytics') %>
-  <!-- 页面点击小红心 -->
   <% if (theme.clicklove && theme.clicklove.enable){ %>
- 	 <script src="<%=config.root%>assets/clicklove.js"></script>
+    <!-- 页面点击小红心 -->
+ 	  <script src="<%- url_for('lib/clickLove.js') %>"></script>
   <% } %>
   <%- partial('baidu-push') %>
 
   <% if (theme.progressBar.enable) { %>
-    <script src="<%=config.root%>assets/pace.min.js"></script>
+    <script src="<%- url_for('lib/pace.min.js') %>"></script>
     <link href="//cdn.bootcss.com/pace/1.0.2/themes/<%= theme.progressBar.color || 'blue'%>/pace-theme-<%= theme.progressBar.type || 'minimal'%>.css" rel="stylesheet">
   <% } %>
 

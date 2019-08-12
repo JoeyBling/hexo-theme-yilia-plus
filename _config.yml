@@ -8,8 +8,8 @@ menu:
 # SubNav-导航
 subnav:
   github: "#"
-  #gitee: "#" # 码云
-  #jianshu: "#" #简书
+  gitee: "#" # 码云
+  jianshu: "#" #简书
   #csdn: "#"
   #rss: "#"
   #zhihu: "#"
@@ -43,7 +43,7 @@ show_all_link: '展开全文'
 # 数学公式
 mathjax: false
 # 是否在新窗口打开链接
-open_in_new: true
+open_in_new: false
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
@@ -179,6 +179,15 @@ word_count:
   enable: false
   # 只在文章详情显示(不在首页显示)
   only_article_visit: true
+
+# 文字输入特效
+# https://github.com/disjukr/activate-power-mode
+activate_power_mode:
+  enable: true
+  # 使输入模式丰富多彩
+  colorful: true
+  # 是否开启摇动
+  shake: false
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:

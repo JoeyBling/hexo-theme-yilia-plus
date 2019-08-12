@@ -3,11 +3,11 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
+        <a href="<%- url_for('/') %>" id="logo"><%= config.title %></a>
       </h1>
       <% if (theme.subtitle){ %>
         <h2 id="subtitle-wrap">
-          <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
+          <a href="<%- url_for('/') %>" id="subtitle"><%= theme.subtitle %></a>
         </h2>
       <% } %>
     </div>
