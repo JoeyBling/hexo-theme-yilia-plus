@@ -6,6 +6,13 @@
   transition: all .2s ease-in;
   height: 100%;
   z-index: 999;
+  overflow: hidden;
+  overflow-y: auto;
+  margin-bottom: 15px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   &.show {
     @extend %shadow;
@@ -25,9 +32,11 @@
 
   #header {
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
+    height: 100%;
     position: relative;
     border-bottom: 1px solid color-border;
+    overflow: visible;
 
     a {
       color: #696969;
@@ -74,6 +83,7 @@
     .header-smart-menu {
       font-size: 12px;
       margin-bottom: 20px;
+      margin-top: 5px;
 
       a {
         &:after {

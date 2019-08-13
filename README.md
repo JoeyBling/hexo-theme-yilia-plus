@@ -38,8 +38,9 @@ hexo-theme-yilia-plus
 16. 添加字数统计功能
 17. 添加文字输入特效
 18. 友情链接优化展示
-19. 其他样式轻微调优、社交图标优化
-20. [fix bugs](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/fix-bugs-record%EF%BC%88%E4%BF%AE%E5%A4%8Dbug%E8%AE%B0%E5%BD%95%EF%BC%89)
+19. 左侧边栏动态图效果
+20. 其他样式轻微调优、社交图标优化
+21. [fix bugs](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/fix-bugs-record%EF%BC%88%E4%BF%AE%E5%A4%8Dbug%E8%AE%B0%E5%BD%95%EF%BC%89)
 
 > 如果有小伙伴有新功能的意见或者改进欢迎给我提意见和建议~
 
@@ -112,8 +113,6 @@ git pull
 menu:
   主页: /
   技术笔记: https://zhousiwei.gitee.io/ibooks/
-  个人简历: https://zhousiwei.gitee.io/cv/
-  日记本: /tags/日记本/
 
 # SubNav-导航
 subnav:
@@ -152,8 +151,8 @@ excerpt_link: more
 show_all_link: '展开全文'
 # 数学公式
 mathjax: false
-# 是否在新窗口打开链接
-open_in_new: true
+# Open link in a new tab | 是否在新窗口打开链接
+open_in_new: false
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
@@ -204,8 +203,9 @@ disqus: false
 # 3、Gitment----基于GitHub的评论系统(关闭请设置gitment_owner为false)
 # 关于如何集成:https://www.jianshu.com/p/ac7658cc912f
 gitment_owner: false      #你的 GitHub ID
-gitment_remote: false  # 是否使用官方js(false可以提升访问速度)
-gitment_repo: ''          #存储评论的 repo
+# 是否使用官方js(false可以提升访问速度，本地修改过一部分的js，官方js可能会出现服务器不稳定，不太建议使用)
+gitment_remote: false
+gitment_repo: ''          #存储评论的 repo name(需要在Github创建)
 gitment_oauth:
   client_id: ''           #client ID
   client_secret: ''       #client secret
@@ -221,7 +221,7 @@ giteement:
   # 不能更改(网上开源项目https://github.com/Rob--W/cors-anywhere作者提供的专门用来跨域服务器的配置)
   oauth_uri: https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token
   giteeID: ''  # 你的码云账号英文名
-  # 存储评论的 repo
+  # 存储评论的 repo name(需要在码云仓库创建公开仓库)
   repo: ''
   gitment_oauth:
     client_id: ''           #client ID
@@ -237,7 +237,9 @@ busuanzi:
 music:
   enable: false
   #id: 1332647902  # 网易云分享的ID
-  autoplay: true  # 是否开启自动播放
+  autoPlay: true  # 是否开启自动播放
+  # 提示文本(关闭请设置为false)
+  text: true
 
 # 页面点击小红心
 clicklove:
@@ -245,6 +247,7 @@ clicklove:
 
 # GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
 github:
+  # (关闭请设置为false)
   url: https://github.com/JoeyBling/hexo-theme-yilia-plus
 
 # 页脚 Litten
@@ -283,10 +286,11 @@ tab_title_change:
   return_tab_title: '(*´∇｀*) 被你发现啦~ '
 
 # 是否开启字数统计(关闭请设置enable为false)
-# 必须安装`hexo-wordcount`插件，在根目录执行`npm i hexo-wordcount --save`
+# https://github.com/willin/hexo-wordcount
+# 必须安装 `hexo-wordcount` 插件，在根目录执行 `npm i hexo-wordcount --save`
 # 也可以单独在md文件里Front-matter设置`no_word_count: true`属性，来自定义关闭字数统计
 word_count:
-  enable: false
+  enable: true
   # 只在文章详情显示(不在首页显示)
   only_article_visit: true
 
@@ -304,6 +308,11 @@ style:
   # 头像上面的背景颜色
   # header: '#D3D1DC'
   header: '#4d4d4d'
+  gif:
+    # 是否启用左侧边栏动态图效果
+    enable: false
+    # 自定义背景图路径(默认可以不设置，提供默认背景图)
+    # path: /img/biubiubiu.gif
   # 右滑板块背景
   slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
 
