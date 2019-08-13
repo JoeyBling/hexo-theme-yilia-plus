@@ -1,5 +1,5 @@
 ---
-name: 其他
+name: 其他ww
 about: Not a question, feature-request, bug
 title: ''
 labels: ''
