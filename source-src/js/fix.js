@@ -26,11 +26,11 @@ function init() {
     })
   }
 
-  // about me 转义
-  var $aboutme = document.querySelector('#js-aboutme')
-  if ($aboutme && $aboutme.length !== 0) {
-    $aboutme.innerHTML = $aboutme.innerText
-  }
+  // about me 转义html
+  // var $aboutme = document.querySelector('#js-aboutme')
+  // if ($aboutme && $aboutme.length !== 0) {
+  //   $aboutme.innerHTML = $aboutme.innerText
+  // }
 
 }
 

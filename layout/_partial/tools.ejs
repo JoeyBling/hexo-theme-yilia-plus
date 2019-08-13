@@ -107,8 +107,9 @@
 
     <%if(hasAboutme){%>
     	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	<%if(theme.aboutme){%>
-  	  		<div class="aboutme-wrap" id="js-aboutme"><%=theme.aboutme%></div>
+        <%if(theme.aboutme){%>
+          <!-- fix.js about me 转义html -->
+  	  		<div class="aboutme-wrap" id="aboutme"><%-theme.aboutme%></div>
   	  	<%}%>
     	</section>
     <%}%>
