@@ -26,7 +26,7 @@ hexo-theme-yilia-plus
 4. 页面点击小红心效果
 5. 增加了多个SubNav导航图标展示
 6. 添加GitHub Ribbons(Fork me)
-7. 页脚 Litten自定义
+7. 页脚 Litten自定义(弃用)
 8. 添加版权声明
 9. 添加百度站长平台主动推送
 10. 集成 gitment 评论 ➡️ [https://github.com/JoeyBling/yilia-plus-demo](https://github.com/JoeyBling/yilia-plus-demo)
