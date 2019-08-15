@@ -17,11 +17,11 @@
 			<% if (theme.subtitle){ %>
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i><%=theme.subtitle%><i class="icon icon-quo-right"></i></p>
 			<% } %>
-			<% var count = 0%>
+			<% var count = 0; %>
 			<% for (var i in theme.menu){ %>
 				<% count++ %>
 			<% } %>
-			<% var ulWidth = count > 2 ? '70%' : '50%' %>
+			<% var ulWidth = count > 2 ? '70%' : '50%'; %>
 			
 			<nav class="header-nav">
 				<div class="social">
@@ -33,7 +33,7 @@
 
 			<nav class="header-menu js-header-menu">
 				<ul style="width: <%= ulWidth %>">
-				<% var divide = 100 / count + '%' %>
+				<% var divide = 100 / count + '%'; %>
 				<% for (var i in theme.menu){ %>
 					<li style="width: <%= divide %>"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
 		        <%}%>

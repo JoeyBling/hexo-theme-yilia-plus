@@ -1,6 +1,6 @@
 <% var defaultBg = '#4d4d4d'; %>
 <% var defaultBgImg = '/img/biubiubiu.gif'; %>
-<% var overlayBgImg= theme.style.gif && theme.style.gif.enable && theme.style.gif.path ? theme.style.gif.path : defaultBgImg %>
+<% var overlayBgImg= theme.style.gif && theme.style.gif.enable && theme.style.gif.path ? theme.style.gif.path : defaultBgImg; %>
 <div class="overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>;<% if (theme.style.gif && theme.style.gif.enable){ %>background: url('<%- url_for(overlayBgImg) %>') no-repeat ;<%}%>"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
@@ -35,13 +35,13 @@
 		        <%}%>
 			</div>
 		<% if (theme.music && theme.music.enable){ %>
-			<!-- 网易云音乐插件 -->
-			<!-- bottom:120px; left:auto;position:absolute;  width:85% -->
+			<%# "网易云音乐插件" %>
+			<%# "bottom:120px; left:auto;position:absolute;  width:85%" %>
 			<div>
 				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="86" src="//music.163.com/outchain/player?type=2&id=<%=theme.music.id||1334445174%>&auto=<%=theme.music.autoPlay?1:0%>&height=66"></iframe>
 			</div>
 			<% if (theme.music.text || theme.music.text == null){ %>
-				<% var musicText = ( theme.music.text == null || theme.music.text == true ) ? "这似乎是首纯音乐，请尽情的欣赏它吧！" : theme.music.text %>
+				<% var musicText = ( theme.music.text == null || theme.music.text == true ) ? "这似乎是首纯音乐，请尽情的欣赏它吧！" : theme.music.text; %>
 				<p style="font-size: 12px;"><%-musicText%><p>
 			<% } %>
 		<% } %>

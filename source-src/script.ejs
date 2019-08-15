@@ -1,7 +1,7 @@
 <script>
-<% var left = '<%=' %>
-<% var right = '%' %>
-<% var right2 = '>' %>
+<% var left = '<%='; %>
+<% var right = '%'; %>
+<% var right2 = '>'; %>
 
 <% for (var asset in compilation.assets) { %><% if (asset.indexOf('mobile') >= 0) { %><%= compilation.assets[asset].source() %><% } %><% } %>
 </script>
@@ -13,7 +13,7 @@
 	    document.getElementsByTagName('body')[0].appendChild($script)
 	    $script.setAttribute('src', path)
 	}
-	<% for (var asset in compilation.assets) { %><% if (asset.indexOf('slider') >= 0) { %><% var slider = asset %><% } %><% } %>loadScript("<%= left %>config.root<%= right %><%= right2 %><%= slider %>")
+	<% for (var asset in compilation.assets) { %><% if (asset.indexOf('slider') >= 0) { %><% var slider = asset; %><% } %><% } %>loadScript("<%= left %>config.root<%= right %><%= right2 %><%= slider %>")
 })();
 </script>
 

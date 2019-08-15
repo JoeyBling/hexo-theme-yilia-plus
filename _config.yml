@@ -139,7 +139,7 @@ github:
   # (关闭请设置为false)
   url: https://github.com/JoeyBling/hexo-theme-yilia-plus
 
-# 页脚 Litten
+# 页脚 Litten(此配置项已弃用)
 # 帮助我们让更多人可以更方便使用Hexo，请尽量不要修改此主题配置
 pagefooter:
   litten: GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a>

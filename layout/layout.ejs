@@ -5,7 +5,7 @@
 <body>
   <div id="container" q-class="show:isCtnShow">
     <% if (theme.github && theme.github.url){ %>
-    <!-- GitHub Ribbons -->
+    <%# "GitHub Ribbons" %>
     <a class="forkme" style="position:fixed;z-index:999;top:0;right:0.5em" href="<%=theme.github.url%>"
       target="_blank"><img width="149" height="149" src="<%- url_for('img/forkme.png') %>"
         class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
@@ -35,7 +35,7 @@
   </div>
 
   <%- partial('_partial/activate-power-mode') %>
-  <!-- 背景图片：https://github.com/hustcc/ribbon.js -->
-  <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="<%- url_for('plugins/ribbon.js/ribbon.min.js') %>"></script> -->
+  <%# "背景图片：https://github.com/hustcc/ribbon.js" %>
+  <%# '<script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="<%- url_for('plugins/ribbon.js/ribbon.min.js') %>"></script>' %>
 </body>
 </html>

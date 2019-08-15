@@ -106,7 +106,7 @@ git pull
 
 &#160;&#160;&#160;&#160;主题配置文件在主目录下的`_config.yml`，请根据自己需要修改使用。
 
-> 完整配置例子，可以参考[yilia-plus博客备份](http://github.com/JoeyBling/yilia-plus-demo)
+> 完整配置Demo例子，可以参考[yilia-plus博客备份](http://github.com/JoeyBling/yilia-plus-demo)
 
 ```yaml
 # Header-菜单
@@ -250,7 +250,7 @@ github:
   # (关闭请设置为false)
   url: https://github.com/JoeyBling/hexo-theme-yilia-plus
 
-# 页脚 Litten
+# 页脚 Litten(此配置项已弃用)
 # 帮助我们让更多人可以更方便使用Hexo，请尽量不要修改此主题配置
 pagefooter:
   litten: GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a>

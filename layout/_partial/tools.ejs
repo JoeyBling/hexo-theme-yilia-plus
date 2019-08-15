@@ -5,16 +5,16 @@
 %>
 <div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
   <div class="tools-nav header-menu">
-    <% var count = 0%>
+    <% var count = 0; %>
     <% for (var i in theme.smart_menu){ %>
       <% if (theme.smart_menu[i]) { %>
       <% count++ %>
       <% } %>
     <% } %>
-    <% var ulWidth = '70%' %>
+    <% var ulWidth = '70%'; %>
 
     <ul style="width: <%= ulWidth %>">
-    <% var divide = 100 / count + '%' %>
+    <% var divide = 100 / count + '%'; %>
     <% for (var i in theme.smart_menu){ %>
       <% if(theme.smart_menu[i]){ %>
       <li style="width: <%= divide %>" q-on="click: openSlider(e, '<%-i%>')"><a href="javascript:void(0)" q-class="active:<%-i%>"><%= theme.smart_menu[i] %></a></li>
@@ -108,7 +108,7 @@
     <%if(hasAboutme){%>
     	<section class="tools-section tools-section-me" q-show="aboutme">
         <%if(theme.aboutme){%>
-          <!-- fix.js about me 转义html -->
+          <%# "fix.js about me 转义html" %>
   	  		<div class="aboutme-wrap" id="aboutme"><%-theme.aboutme%></div>
   	  	<%}%>
     	</section>
