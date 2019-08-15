@@ -288,9 +288,9 @@ tab_title_change:
 # 是否开启字数统计(关闭请设置enable为false)
 # https://github.com/willin/hexo-wordcount
 # 必须安装 `hexo-wordcount` 插件，在根目录执行 `npm i hexo-wordcount --save`
-# 也可以单独在md文件里Front-matter设置`no_word_count: true`属性，来自定义关闭字数统计
+# 也可以单独在md文件里Front-matter设置`no_word_count: true`属性，来自定义是否开启字数统计
 word_count:
-  enable: true
+  enable: false
   # 只在文章详情显示(不在首页显示)
   only_article_visit: true
 
