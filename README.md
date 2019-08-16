@@ -38,7 +38,7 @@ hexo-theme-yilia-plus
 16. 添加字数统计功能
 17. 添加文字输入特效
 18. 友情链接优化展示
-19. 左侧边栏动态图效果
+19. 左侧边栏动态图效果、左侧导航栏支持滚动
 20. 其他样式轻微调优、社交图标优化
 21. [fix bugs](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/fix-bugs-record%EF%BC%88%E4%BF%AE%E5%A4%8Dbug%E8%AE%B0%E5%BD%95%EF%BC%89)
 
