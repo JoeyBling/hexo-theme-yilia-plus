@@ -236,13 +236,16 @@ busuanzi:
 # 网易云音乐插件
 music:
   enable: false
+  # 播放器尺寸类型（1：长尺寸、2：短尺寸）
+  type: 2
   #id: 1332647902  # 网易云分享的ID
   autoPlay: true  # 是否开启自动播放
   # 提示文本(关闭请设置为false)
-  text: true
+  text: '这似乎是首纯音乐，请尽情的欣赏它吧1！'
 
 # 页面点击小红心
-clicklove:
+clickLove:
+  # (关闭请设置为false)
   enable: true
 
 # GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
@@ -288,7 +291,7 @@ tab_title_change:
 # 是否开启字数统计(关闭请设置enable为false)
 # https://github.com/willin/hexo-wordcount
 # 必须安装 `hexo-wordcount` 插件，在根目录执行 `npm i hexo-wordcount --save`
-# 也可以单独在md文件里Front-matter设置`no_word_count: true`属性，来自定义是否开启字数统计
+# 也可以单独在md文件里Front-matter设置`no_word_count: true`属性，来自定义关闭字数统计
 word_count:
   enable: false
   # 只在文章详情显示(不在首页显示)
