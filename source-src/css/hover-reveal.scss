@@ -1,0 +1,16 @@
+.hover-reveal {
+  position: fixed;
+  width: 200px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.hover-reveal__inner,
+.hover-reveal__img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}

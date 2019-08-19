@@ -34,6 +34,9 @@
     <%- partial('_partial/viewer') %>
   </div>
 
+  <%- partial('_partial/hover-effect', {
+        global: theme.hover_effect.global
+      }) %>
   <%- partial('_partial/activate-power-mode') %>
   <%# "背景图片：https://github.com/hustcc/ribbon.js" %>
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="<%- url_for('plugins/ribbon.js/ribbon.min.js') %>"></script> -->

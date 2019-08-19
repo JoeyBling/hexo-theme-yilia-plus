@@ -1,0 +1,15 @@
+<% if (global) { %>
+<script type="text/javascript" src="<%- url_for('plugins/TweenMax/TweenMax.min.js') %>"></script>
+<script type="text/javascript" src="<%- url_for('plugins/TweenMax/HoverImg.js') %>"></script>
+<% } %>
+<script>
+
+  var hoverEffect = {
+    <% if (theme.hover_effect.subNav) { %> subNav: ".social a", <% } %>
+  }
+
+  for (var x in hoverEffect) {
+    document.querySelectorAll(hoverEffect[x]).forEach(link => new HoverImgFx1(link));
+  }
+
+</script>

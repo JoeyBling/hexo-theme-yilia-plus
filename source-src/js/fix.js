@@ -27,7 +27,7 @@ function init() {
   }
 
   // about me 转义html
-  // var $aboutme = document.querySelector('#js-aboutme')
+  // var $aboutme = document.querySelector('#aboutme')
   // if ($aboutme && $aboutme.length !== 0) {
   //   $aboutme.innerHTML = $aboutme.innerText
   // }

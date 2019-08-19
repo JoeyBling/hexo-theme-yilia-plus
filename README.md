@@ -115,7 +115,7 @@ menu:
   技术笔记: https://zhousiwei.gitee.io/ibooks/
 
 # SubNav-导航
-subnav:
+subNav:
   github: "#"
   gitee: "#" # 码云
   jianshu: "#" #简书

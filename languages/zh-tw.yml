@@ -21,7 +21,7 @@ category: Category
 tag: Tag
 
 # 如果使用默认提示，请设置'NULL'
-subnav:
+subNav:
   title:
     github: GitHub
     gitee: 碼雲

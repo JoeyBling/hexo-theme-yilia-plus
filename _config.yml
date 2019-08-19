@@ -2,9 +2,10 @@
 menu:
   主页: /
   技术笔记: https://zhousiwei.gitee.io/ibooks/
+  随笔: /tags/随笔/
 
-# SubNav-导航
-subnav:
+# subNav-导航
+subNav:
   github: "#"
   gitee: "#" # 码云
   jianshu: "#" #简书
@@ -12,7 +13,7 @@ subnav:
   #rss: "#"
   #zhihu: "#"
   #qq: "img/2434387555.jpg"
-  #weixin: "img/weixin_.png"
+  weixin: "img/weixin_.png"
   #weibo: "#"
   #douban: "#"
   #segmentfault: "#"
@@ -23,6 +24,13 @@ subnav:
   #google: "#"
   #twitter: "#"
   #linkedin: "#"
+
+# 图片悬停效果
+hover_effect:
+  # (关闭请设置为false)
+  global: true
+  # SubNav-导航
+  subNav: true
 
 # RSS订阅(关于如何配置启用:https://www.jianshu.com/p/2aaac7a19736)
 rss: /atom.xml
@@ -125,9 +133,9 @@ busuanzi:
 # 网易云音乐插件
 music:
   enable: false
-  # 播放器尺寸类型（1：长尺寸、2：短尺寸）
+  # 播放器尺寸类型(1：长尺寸、2：短尺寸)
   type: 2
-  #id: 1332647902  # 网易云分享的ID
+  #id: 1332647902  # 网易云分享的音乐ID(更换音乐请更改此配置项)
   autoPlay: true  # 是否开启自动播放
   # 提示文本(关闭请设置为false)
   text: '这似乎是首纯音乐，请尽情的欣赏它吧1！'
