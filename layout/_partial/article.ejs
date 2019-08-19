@@ -56,22 +56,22 @@
     <% } %>
 
     <% if (((theme.copyright_type === 2) || (theme.copyright_type === 1 && post.copyright)) && !index){ %>
-      <div> 
-        <ul class="post-copyright">
-          <li>
-            <strong>本文作者：</strong>
-            <%= config.author%>
-          </li>
-          <li>
-            <strong>本文链接：</strong>
-            <a href="<%= config.url %>/<%= post.path %>" title="<%= post.title %>" target="_blank"><%= config.url %>/<%= post.path %></a>
-          </li>
-          <li>
-            <strong>版权声明： </strong>
-            本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow" target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
-          </li>
-        </ul>
-      </div>
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          <%= config.author%>
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="<%= config.url %>/<%= post.path %>" title="<%= post.title %>" target="_blank"><%= config.url %>/<%= post.path %></a>
+        </li>
+        <li>
+          <strong>版权声明： </strong>
+          本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow" target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
+        </li>
+      </ul>
+    </div>
     <% } %>
 
   </div>
