@@ -39,8 +39,10 @@ hexo-theme-yilia-plus
 17. 添加文字输入特效
 18. 友情链接优化展示
 19. 左侧边栏动态图效果、左侧导航栏支持滚动
-20. 其他样式轻微调优、社交图标优化
-21. [fix bugs](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/fix-bugs-record%EF%BC%88%E4%BF%AE%E5%A4%8Dbug%E8%AE%B0%E5%BD%95%EF%BC%89)
+20. 添加悬停预览图片效果
+21. 其他样式轻微调优、社交图标优化
+22. 优化配置是否在新窗口打开链接
+23. [fix bugs](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/fix-bugs-record%EF%BC%88%E4%BF%AE%E5%A4%8Dbug%E8%AE%B0%E5%BD%95%EF%BC%89)
 
 > 如果有小伙伴有新功能的意见或者改进欢迎给我提意见和建议~
 
@@ -57,6 +59,12 @@ hexo-theme-yilia-plus
 ![](./examples/images/qrcode.png)
 
 ----------
+
+## 鼓励
+
+&#160;&#160;&#160;&#160;**如果觉得本主题还不错，您的支持和鼓励才是后续更新最大的动力，== 欢迎 [Star](https://github.com/JoeyBling/hexo-theme-yilia-plus/stargazers) ==**
+
+![Stargazers over time](https://starchart.cc/JoeyBling/hexo-theme-yilia-plus.svg)
 
 ## 关于主题：
 1. 崇尚简约
@@ -80,7 +88,7 @@ hexo-theme-yilia-plus
 - [Gitment](https://github.com/imsun/gitment)
 - [基于码云的评论系统](https://gitee.com/zhousiwei/giteement)
 - DISQUS
-- 搜狐畅言 
+- 搜狐畅言
 
 ## 三、开始使用
 
@@ -113,8 +121,9 @@ git pull
 menu:
   主页: /
   技术笔记: https://zhousiwei.gitee.io/ibooks/
+  随笔: /tags/随笔/
 
-# SubNav-导航
+# subNav-导航
 subNav:
   github: "#"
   gitee: "#" # 码云
@@ -135,6 +144,15 @@ subNav:
   #twitter: "#"
   #linkedin: "#"
 
+# 悬停预览图片效果
+## `global` 0: Set separately, 1: Enable global 2: Close global
+## `global` 0: 分开设置, 1: 全局启用, 2: 全局关闭
+hover_effect:
+  # 是否全局启用(关闭请设置为false)
+  global: 2
+  # SubNav-导航
+  subNav: true
+
 # RSS订阅(关于如何配置启用:https://www.jianshu.com/p/2aaac7a19736)
 rss: /atom.xml
 
@@ -151,8 +169,12 @@ excerpt_link: more
 show_all_link: '展开全文'
 # 数学公式
 mathjax: false
+
 # Open link in a new tab | 是否在新窗口打开链接
-open_in_new: false
+open_in_new:
+  article: true  # 文章链接
+  menu: true   # 菜单
+  subNav: true  # 导航菜单
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
@@ -236,12 +258,12 @@ busuanzi:
 # 网易云音乐插件
 music:
   enable: false
-  # 播放器尺寸类型（1：长尺寸、2：短尺寸）
+  # 播放器尺寸类型(1：长尺寸、2：短尺寸)
   type: 2
-  #id: 1332647902  # 网易云分享的ID
+  #id: 1332647902  # 网易云分享的音乐ID(更换音乐请更改此配置项)
   autoPlay: true  # 是否开启自动播放
   # 提示文本(关闭请设置为false)
-  text: '这似乎是首纯音乐，请尽情的欣赏它吧1！'
+  text: '这似乎是首纯音乐，请尽情的欣赏它吧！'
 
 # 页面点击小红心
 clickLove:
@@ -356,6 +378,13 @@ friends:
 aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
 ```
 
+## 捐赠
+&#160;&#160;&#160;&#160;**如果感觉对您有帮助，请作者喝杯咖啡吧，请注明您的名字或者昵称，方便作者感谢o(*￣︶￣*)o**
+
+| 微信 | 支付宝 |
+| :---: | :---: |
+| ![](./examples/images/weixin.png) | ![](./examples/images/alipay.jpeg) |
+
 ### Hexo博客优化
 - [Hexo博客集成码云评论系统](https://www.jianshu.com/p/f5c4633524c7)
 - [Hexo博客集成Gitment评论](https://www.jianshu.com/p/ac7658cc912f)
@@ -367,13 +396,6 @@ aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众�
 - [Hexo博客添加访问量统计](https://www.jianshu.com/p/c9f83d5b893a)
 - [Hexo博客yilia主题添加背景音乐 （网易云音乐）](https://www.jianshu.com/p/f3fe5cb74d32)
 - [使用Hexo+GitHub搭建免费个人博客](https://www.jianshu.com/p/efebead840b2)
-
-## 捐赠
-&#160;&#160;&#160;&#160;**如果感觉对您有帮助，请作者喝杯咖啡吧，请注明您的名字或者昵称，方便作者感谢o(*￣︶￣*)o**
-
-| 微信 | 支付宝 |
-| :---: | :---: |
-| ![](./examples/images/weixin.png) | ![](./examples/images/alipay.jpeg) |
 
 ## License
 

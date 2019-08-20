@@ -1,15 +1,34 @@
-<% if (global) { %>
+<% if (global === 0 || global === 1) { %>
 <script type="text/javascript" src="<%- url_for('plugins/TweenMax/TweenMax.min.js') %>"></script>
 <script type="text/javascript" src="<%- url_for('plugins/TweenMax/HoverImg.js') %>"></script>
-<% } %>
+
 <script>
 
+<% if (global === 0) { %>
   var hoverEffect = {
-    <% if (theme.hover_effect.subNav) { %> subNav: ".social a", <% } %>
+    <% if (theme.hover_effect.subNav) { %> subNav: ".left-col .social a", <% } %>
   }
+<% } else if (global === 1) { %>
+  var hoverEffect = {
+    subNav: ".left-col .social a"
+  }
+<% } %>
 
   for (var x in hoverEffect) {
-    document.querySelectorAll(hoverEffect[x]).forEach(link => new HoverImgFx1(link));
+    // 初始化data-img属性值
+    let $em = document.querySelectorAll(hoverEffect[x]);
+    $em.forEach(($a) => {
+      //console.log($a.href);
+      if (isImageType($a.href)) {
+        $a.setAttribute("data-img", $a.href)
+      }
+    })
+    // 实现悬停元素预览图片效果
+    let $a = document.querySelectorAll(hoverEffect[x] + "[data-img]");
+    $a.forEach(($em) => {
+      new HoverImgFx1($em)
+    })
   }
 
 </script>
+<% } %>

@@ -32,6 +32,19 @@ function init() {
   //   $aboutme.innerHTML = $aboutme.innerText
   // }
 
+  // 初始化data-img属性值(实现悬停元素预览图片效果)
+  /* document.querySelectorAll("a").forEach($a => {
+    console.log($a.href);
+    if (isImageType($a.href)) {
+      $a.setAttribute("data-img", $a.href)
+    }
+  }); */
+
+}
+
+// 判断字符串是否是图片格式类型
+function isImageType(typeStr) {
+  return /\.(gif|jpg|jpeg|png)$/i.test(typeStr);
 }
 
 module.exports = {

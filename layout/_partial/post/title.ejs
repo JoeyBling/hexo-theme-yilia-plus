@@ -5,7 +5,7 @@
 <% } else if (post.title){ %>
   <% if (index){ %>
     <h1 itemprop="name">
-	<% if (theme.open_in_new){ %>
+	<% if (theme.open_in_new.article){ %>
 	  <a class="<%= class_name %>" href="<%- url_for(post.path) %>" target="_blank"><%= post.title %></a>
   <% } else { %>
 	  <a class="<%= class_name %>" href="<%- url_for(post.path) %>"><%= post.title %></a>

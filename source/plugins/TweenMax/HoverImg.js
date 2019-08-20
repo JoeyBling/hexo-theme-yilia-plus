@@ -8,7 +8,7 @@
  * Copyright 2019, JoeyBling
  */
 // from http://www.quirksmode.org/js/events_properties.html#position
-const getMousePos = (e) => {
+const getMousePos = function (e) {
   let posx = 0;
   let posy = 0;
   if (!e) e = window.event;
@@ -24,8 +24,11 @@ const getMousePos = (e) => {
     y: posy
   }
 }
+
 // Generate a random float.
-const getRandomFloat = (min, max) => (Math.random() * (max - min) + min).toFixed(2);
+const getRandomFloat = function (min, max) {
+  (Math.random() * (max - min) + min).toFixed(2)
+};
 
 /**
  * One class per effect. 
@@ -56,7 +59,7 @@ class HoverImgFx1 {
         left: document.body.scrollLeft + document.documentElement.scrollLeft,
         top: document.body.scrollTop + document.documentElement.scrollTop
       };
-      this.DOM.reveal.style.top = `${mousePos.y-170-docScrolls.top}px`;
+      this.DOM.reveal.style.top = `${mousePos.y-220-docScrolls.top}px`;
       this.DOM.reveal.style.left = `${mousePos.x+1-docScrolls.left}px`;
     };
     this.mouseenterFn = (ev) => {
@@ -171,4 +174,10 @@ class HoverImgFx1 {
       });
     });
   }
+}
+
+
+// 判断字符串是否是图片格式类型
+function isImageType(typeStr) {
+  return /\.(gif|jpg|jpeg|png)$/i.test(typeStr);
 }
