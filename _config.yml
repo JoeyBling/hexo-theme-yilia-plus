@@ -26,10 +26,9 @@ subNav:
   #linkedin: "#"
 
 # 悬停预览图片效果
-## `global` 0: Set separately, 1: Enable global 2: Close global
-## `global` 0: 分开设置, 1: 全局启用, 2: 全局关闭
 hover_effect:
-  # 是否全局启用(关闭请设置为false)
+  ## `global` 0: Set separately, 1: Enable global 2: Close global
+  ## `global` 0: 分开设置, 1: 全局启用, 2: 全局关闭
   global: 2
   # SubNav-导航
   subNav: true
