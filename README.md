@@ -145,9 +145,9 @@ subNav:
   #linkedin: "#"
 
 # 悬停预览图片效果
-## `global` 0: Set separately, 1: Enable global 2: Close global
-## `global` 0: 分开设置, 1: 全局启用, 2: 全局关闭
 hover_effect:
+  ## `global` 0: Set separately, 1: Enable global 2: Close global
+  ## `global` 0: 分开设置, 1: 全局启用, 2: 全局关闭
   global: 2
   # SubNav-导航
   subNav: true
@@ -172,8 +172,8 @@ mathjax: false
 # Open link in a new tab | 是否在新窗口打开链接
 open_in_new:
   article: true  # 文章链接
-  menu: true   # 菜单
-  subNav: true  # 导航菜单
+  menu: true   # 导航菜单
+  subNav: true  # 子菜单
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
