@@ -1,6 +1,6 @@
 .article-inner {
   p {
-    margin: 0 0 1.75em;
+    margin: 1.6em 0;
   }
 }
 
@@ -79,9 +79,9 @@
   padding-right: 7.6923%;
   padding-left: 7.6923%;
 
-  p {
+  /* p {
     margin-top: 10px;
-  }
+  } */
 
   p code,
   li code {
@@ -114,16 +114,16 @@
 
   ul {
     li:before {
-      content: "";
+      /* content: "";
       width: 6px;
       height: 6px;
-      border: 1px solid #999;
+      border: 0px;
       border-radius: 10px;
       background: #aaa;
       display: inline-block;
       margin-right: 10px;
       float: left;
-      margin-top: 10px;
+      margin-top: 10px; */
     }
   }
 
@@ -132,7 +132,7 @@
 
     li:before {
       counter-increment: item;
-      content: counter(item)".";
+      /* content: counter(item)"."; */
       margin-right: 10px;
     }
   }
@@ -140,7 +140,10 @@
   ul,
   ol {
     font-size: 14px;
-    margin: 10px 0px;
+    margin: 0px 20px;
+    list-style: decimal;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
   }
 
   li {
@@ -148,6 +151,9 @@
     ul,
     ol {
       margin-left: 30px;
+      list-style: disc;
+      margin-top: 0;
+      margin-bottom: 0;
 
       li:before {
         content: "";

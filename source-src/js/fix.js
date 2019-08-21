@@ -8,7 +8,7 @@ function init() {
     $nav.innerHTML = $nav.innerHTML + '<a class="extend next disabled" rel="next">Next &raquo;</a>'
   }
 
-  // 新窗口打开
+  // 文章链接新窗口打开
   if (yiliaConfig && yiliaConfig.open_in_new) {
     let $a = document.querySelectorAll(('.article-entry a:not(.article-more-a)'))
     $a.forEach(($em) => {
