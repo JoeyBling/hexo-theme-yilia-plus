@@ -1,18 +1,32 @@
 .article-entry pre,
 .article-entry .highlight {
-  background: #272822;
+  background: #1a0139;
   margin: 10px 0;
   padding: 10px 10px;
-  overflow: auto;
+  overflow: hidden;
+  overflow-x: auto;
   color: #fff;
   font-size: 0.9em;
   line-height: 22.400000000000002px;
+
+  &::-webkit-scrollbar {
+    height: 5px;
+    background: #ccc;
+    border-radius: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .2);
+  }
+
 }
 
 .article-entry .highlight .gutter pre,
 .article-entry .highlight .gutter pre .line,
 .article-entry .gist .gist-file .gist-data .line-numbers {
-  color: #666;
+  /* color: #666; */
+  color: #fc0000;
 }
 
 .article-entry pre,

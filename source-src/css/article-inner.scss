@@ -137,7 +137,6 @@
     }
   }
 
-  ul,
   ol {
     font-size: 14px;
     margin: 0px 20px;
@@ -146,7 +145,20 @@
     margin-bottom: 1.6em;
   }
 
+  ul {
+    font-size: 14px;
+    margin: 0px 20px;
+    list-style: disc;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+  }
+
   li {
+
+    a {
+      word-wrap: break-word;
+      word-break: normal;
+    }
 
     ul,
     ol {
