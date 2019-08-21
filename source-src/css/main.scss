@@ -26,3 +26,9 @@
   @import "./mobile";
   @import "./mobile-slider";
 }
+
+@media screen and (max-width: 320px) {
+  .forkMe {
+    display: none;
+  }
+}

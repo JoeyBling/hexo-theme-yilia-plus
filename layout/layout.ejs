@@ -4,17 +4,17 @@
 
 <body>
   <div id="container" q-class="show:isCtnShow">
-    <% if (theme.github && theme.github.url){ %>
-    <%# "GitHub Ribbons" %>
-    <a class="forkme" style="position:fixed;z-index:999;top:0;right:0.5em" href="<%=theme.github.url%>"
-      target="_blank"><img width="149" height="149" src="<%- url_for('img/forkme.png') %>"
-        class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
-    <% } %>
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       <%- partial('_partial/left-col', null, {cache: !config.relative_link}) %>
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+    <% if (theme.github && theme.github.url){ %>
+      <%# "GitHub Ribbons" %>
+      <a class="forkMe" style="position:absolute;z-index:999;top:0;right:0.5em" href="<%=theme.github.url%>"
+        target="_blank"><img width="149" height="149" src="<%- url_for('img/forkme.png') %>"
+          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+    <% } %>
       <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
       <div id="wrapper" class="body-wrap">
         <div class="menu-l">
