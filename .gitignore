@@ -13,4 +13,4 @@ jspm_packages
 .npm
 
 # The custom
-/background/
+background/
