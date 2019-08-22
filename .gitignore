@@ -1,7 +1,16 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+.history
 .DS_Store
-node_modules/
-dist/
-npm-debug.log
-selenium-debug.log
-test/unit/coverage
-test/e2e/reports
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# Optional npm cache directory
+.npm
+
+# The custom
+/background/
