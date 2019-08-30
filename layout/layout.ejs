@@ -9,12 +9,12 @@
       <%- partial('_partial/left-col', null, {cache: !config.relative_link}) %>
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
-    <% if (theme.github && theme.github.url){ %>
+      <% if (theme.github && theme.github.url){ %>
       <%# "GitHub Ribbons" %>
       <a class="forkMe" style="position:absolute;z-index:999;top:0;right:0.5em" href="<%=theme.github.url%>"
         target="_blank"><img width="149" height="149" src="<%- url_for('img/forkme.png') %>"
           class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
-    <% } %>
+      <% } %>
       <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
       <div id="wrapper" class="body-wrap">
         <div class="menu-l">
@@ -40,5 +40,10 @@
   <%- partial('_partial/activate-power-mode') %>
   <%# "背景图片：https://github.com/hustcc/ribbon.js" %>
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="<%- url_for('plugins/ribbon.js/ribbon.min.js') %>"></script> -->
+  <%# "Live2D看板娘：https://github.com/JoeyBling/live2d-widget.js" %>
+  <% if (theme.live2d && theme.live2d.enable){ %>
+    <%- partial('_partial/live2d-widget') %>
+  <% } %>
 </body>
+
 </html>

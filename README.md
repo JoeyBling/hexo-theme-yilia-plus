@@ -43,6 +43,7 @@ hexo-theme-yilia-plus
 21. 其他样式轻微调优、社交图标优化
 22. 优化配置是否在新窗口打开链接
 23. [fix bugs](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/fix-bugs-record%EF%BC%88%E4%BF%AE%E5%A4%8Dbug%E8%AE%B0%E5%BD%95%EF%BC%89)
+24. [添加看板娘动态模型插件](https://github.com/JoeyBling/live2d-widget.js)
 
 > 如果有小伙伴有新功能的意见或者改进欢迎给我提意见和建议~
 
@@ -326,6 +327,25 @@ activate_power_mode:
   colorful: true
   # 是否开启摇动
   shake: false
+
+# 看板娘动态模型插件
+## https://github.com/JoeyBling/live2d-widget.js
+live2d:
+  # (关闭请设置为false)
+  enable: false
+  # 模型名称(取值请参考：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/live2d%E6%A8%A1%E5%9E%8B%E5%8C%85%E5%B1%95%E7%A4%BA)
+  model: hibiki
+  display:
+    position: right # 显示位置：left/right(default: 'right')
+    width: 145  # 模型的长度(default: 150)
+    height: 315 # 模型的高度(default: 300)
+    hOffset: 50 # 水平偏移(default: 0)
+    #vOffset: -20 # 垂直偏移(default: -20)
+  mobile:
+    show: false # 是否在移动设备上显示(default: true)
+    scale: 0.6 # 移动设备上的缩放(default: 0.5)
+  react:
+    opacity: 0.8 # 模型透明度(default: 0.7)
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:

@@ -1,0 +1,50 @@
+<script type="text/javascript" src="<%- url_for('plugins/live2d-widget.js/L2Dwidget.min.js') %>"></script>
+<script type="text/javascript">
+  /**
+   * 完整配置请参考：https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
+   */
+  var pluginModelPath = "assets/", // 模型的文件路径，无需更改
+    pluginRootPath = "<%- url_for('/live2d_models/') %>"; // 插件的路径，无需更改
+  //特定的模型json文件名称
+  var modelPathJson = {
+    "epsilon2_1": "Epsilon2.1",
+    "gf": "Gantzert_Felixander",
+    "haru/01": "haru01",
+    "haru/02": "haru02",
+    "nietzsche": "nietzche"
+  }
+
+  <% if (theme.live2d.model) { %>
+    var modelName = "<%- theme.live2d.model %>";
+  <% } else { %>
+    var modelName = "hibiki";
+  <% } %>
+
+  var modelJsonPath = "";
+  if (modelPathJson[modelName]) {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelPathJson[modelName] +
+      ".model.json";
+  } else {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelName + ".model.json";
+  }
+  L2Dwidget.init({
+    model: {
+      jsonPath: modelJsonPath
+    },
+    display: {
+      <% if (theme.live2d.display && theme.live2d.display.position) { %> position: "<%- theme.live2d.display.position %>", <% } %>
+      <% if (theme.live2d.display && theme.live2d.display.width) { %> width: <%- theme.live2d.display.width %>, <% } %>
+      <% if (theme.live2d.display && theme.live2d.display.height) { %> height: <%- theme.live2d.display.height %>, <% } %>
+      <% if (theme.live2d.display && theme.live2d.display.hOffset) { %> hOffset: <%- theme.live2d.display.hOffset %>, <% } %>
+      <% if (theme.live2d.display && theme.live2d.display.vOffset) { %> vOffset: <%- theme.live2d.display.vOffset %> <% } %>
+    },
+    mobile: {
+      <% if (theme.live2d.mobile && theme.live2d.mobile.show == false) { %> show: <%- theme.live2d.mobile.show %>, <% } %>
+      <% if (theme.live2d.mobile && theme.live2d.mobile.scale) { %> scale: <%- theme.live2d.mobile.scale %> <% } %>
+    },
+    react: {
+      <% if (theme.live2d.react && theme.live2d.react.opacity) { %> opacity: <%- theme.live2d.react.opacity %> <% } %>
+    }
+  })
+
+</script>

@@ -6,11 +6,11 @@
 
 <% if (global === 0) { %>
   var hoverEffect = {
-    <% if (theme.hover_effect.subNav) { %> subNav: ".left-col .social a", <% } %>
+    <% if (theme.hover_effect.subNav) { %> "subNav": ".left-col .social a", <% } %>
   }
 <% } else if (global === 1) { %>
   var hoverEffect = {
-    subNav: ".left-col .social a"
+    "subNav": ".left-col .social a"
   }
 <% } %>
 
