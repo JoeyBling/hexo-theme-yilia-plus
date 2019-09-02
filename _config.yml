@@ -160,7 +160,7 @@ github:
 pageFooter:
   litten: GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a>
 
-# 开启百度站长平台主动推送(https://ziyuan.baidu.com/linksubmit/index)
+# 开启百度站长平台自动推送(https://ziyuan.baidu.com/linksubmit/index)
 baidu_push: false
 
 # 版权声明
