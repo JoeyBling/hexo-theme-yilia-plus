@@ -107,6 +107,7 @@ function init() {
       type = 'tag'
     }
     let items = app.items
+    //console.log(items);
     items.forEach((item) => {
       let matchTitle = false
       if (item.title.toLowerCase().indexOf(val) > -1) {
@@ -142,12 +143,14 @@ function init() {
     data.forEach((em) => {
       em.isShow = true
     })
+    console.log(data);
     app.$set('items', data)
-    // 搜索
+    // 搜索历史记录
     let searchWording = (window.localStorage && window.localStorage.getItem(localSearchKey)) || ''
     app.$set('search', searchWording)
     searchWording !== '' && handleSearch(searchWording)
   }).catch((err) => {
+    console.warn(err);
     app.$set('jsonFail', true)
   });
 

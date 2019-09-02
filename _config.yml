@@ -4,7 +4,7 @@ menu:
   技术笔记: https://zhousiwei.gitee.io/ibooks/
   随笔: /tags/随笔/
 
-# subNav-导航
+# subNav-子导航
 subNav:
   github: "#"
   gitee: "#" # 码云
@@ -190,12 +190,11 @@ tab_title_change:
   left_tab_title: '(つェ⊂) 我藏好了哦~ '
   return_tab_title: '(*´∇｀*) 被你发现啦~ '
 
-# 是否开启字数统计(关闭请设置enable为false)
 # https://github.com/willin/hexo-wordcount
-# 必须安装 `hexo-wordcount` 插件，在根目录执行 `npm i hexo-wordcount --save`
+# 是否开启字数统计(关闭请设置enable为false)
 # 也可以单独在md文件里Front-matter设置`no_word_count: true`属性，来自定义关闭字数统计
 word_count:
-  enable: false
+  enable: true
   # 只在文章详情显示(不在首页显示)
   only_article_visit: true
 
