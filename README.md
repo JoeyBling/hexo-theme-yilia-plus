@@ -97,7 +97,7 @@ hexo-theme-yilia-plus
 
 ```bash
 cd ./themes/
-git clone https://github.com/JoeyBling/hexo-theme-yilia-plus.git ./yilia-plus
+git clone --depth=1 https://github.com/JoeyBling/hexo-theme-yilia-plus.git ./yilia-plus
 ```
 
 #### 2、配置
