@@ -143,7 +143,7 @@ function init() {
     data.forEach((em) => {
       em.isShow = true
     })
-    console.log(data);
+    //console.log(data);
     app.$set('items', data)
     // 搜索历史记录
     let searchWording = (window.localStorage && window.localStorage.getItem(localSearchKey)) || ''
