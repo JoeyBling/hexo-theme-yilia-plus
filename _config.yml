@@ -207,6 +207,11 @@ activate_power_mode:
   # 是否开启摇动
   shake: false
 
+
+# 飘雪特效
+# https://github.com/MlgmXyysd/snow.js
+snow: false
+
 # 看板娘动态模型插件
 ## https://github.com/JoeyBling/live2d-widget.js
 live2d:
