@@ -207,7 +207,6 @@ activate_power_mode:
   # 是否开启摇动
   shake: false
 
-
 # 飘雪特效
 # https://github.com/MlgmXyysd/snow.js
 snow: false

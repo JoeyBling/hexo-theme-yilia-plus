@@ -163,7 +163,7 @@ root: /
 
 # Content
 
-# 文章太长，截断按钮文字
+# 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)
 excerpt_link: more
 # 文章卡片右下角常驻链接，不需要请设置为false
 show_all_link: '展开全文'
@@ -240,7 +240,7 @@ giteement:
   # 是否使用官方js(false可以提升访问速度)
   remote: false
   redirect_uri: ''   # 应用回调地址(请和配置的第三方应用保持一致)
-  # 不能更改(网上开源项目https://github.com/Rob--W/cors-anywhere作者提供的专门用来跨域服务器的配置)
+  # 不能更改(网上开源项目`https://github.com/Rob--W/cors-anywhere`作者提供的专门用来跨域服务器的配置)
   oauth_uri: https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token
   giteeID: ''  # 你的码云账号英文名
   # 存储评论的 repo name(需要在码云仓库创建公开仓库)
@@ -280,7 +280,7 @@ github:
 pageFooter:
   litten: GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a>
 
-# 开启百度站长平台主动推送(https://ziyuan.baidu.com/linksubmit/index)
+# 开启百度站长平台自动推送(https://ziyuan.baidu.com/linksubmit/index)
 baidu_push: false
 
 # 版权声明
@@ -326,6 +326,10 @@ activate_power_mode:
   colorful: true
   # 是否开启摇动
   shake: false
+
+# 飘雪特效
+# https://github.com/MlgmXyysd/snow.js
+snow: false
 
 # 看板娘动态模型插件
 ## https://github.com/JoeyBling/live2d-widget.js
