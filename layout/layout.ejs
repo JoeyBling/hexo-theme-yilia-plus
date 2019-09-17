@@ -44,6 +44,16 @@
   <% if (theme.live2d && theme.live2d.enable){ %>
     <%- partial('_partial/live2d-widget') %>
   <% } %>
+  <% if (theme.snow){ %>
+  <script type="text/javascript" src="<%- url_for('lib/snow.js') %>"></script>
+  <script>
+    snow.down();
+    $(window).resize(function() {
+	  $("canvas").css("z-index","500").remove();
+	  snow.down();
+    });
+  </script>
+  <% } %>
 </body>
 
 </html>
