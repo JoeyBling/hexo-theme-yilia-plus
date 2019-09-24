@@ -44,6 +44,7 @@ hexo-theme-yilia-plus
 22. 优化配置是否在新窗口打开链接
 23. [fix bugs](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/fix-bugs-record%EF%BC%88%E4%BF%AE%E5%A4%8Dbug%E8%AE%B0%E5%BD%95%EF%BC%89)
 24. [添加看板娘动态模型插件](https://github.com/JoeyBling/live2d-widget.js)
+25. 添加飘雪特效
 
 > 如果有小伙伴有新功能的意见或者改进欢迎给我提意见和建议~
 
