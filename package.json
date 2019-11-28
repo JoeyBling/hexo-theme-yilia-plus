@@ -1,28 +1,38 @@
 {
   "name": "yilia-plus",
-  "version": "1.0.0",
-  "description": "a theme for hexo,hexo-theme-yilia-plus",
+  "version": "1.1.0",
+  "description": "A simple and elegant theme for hexo.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack",
     "dist": "webpack -p"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JoeyBling/hexo-theme-yilia-plus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JoeyBling/hexo-theme-yilia-plus/issues"
   },
   "keywords": [
     "hexo",
     "theme",
     "blog",
+    "mobile",
+    "gitment",
+    "live2d",
     "yilia-plus"
   ],
-  "author": "周思伟",
-  "license": "Apache License",
-  "bugs": {
-    "url": "https://github.com/JoeyBling/hexo-theme-yilia-plus/issues"
+  "author": {
+    "name": "JoeyBling",
+    "email": "2434387555@qq.com",
+    "url": "https://zhousiwei.gitee.io"
   },
-  "homepage": ".",
+  "license": "MIT",
+  "homepage": "https://github.com/JoeyBling/hexo-theme-yilia-plus",
   "devDependencies": {
     "autoprefixer": "^6.5.1",
     "clean-webpack-plugin": "^0.1.15",

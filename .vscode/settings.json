@@ -1,0 +1,26 @@
+{
+  "editor.detectIndentation": false,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "none",
+  "workbench.colorTheme": "Default Dark+",
+  "search.exclude": {
+    "**/node_modules": false,
+    "**/bower_components": true
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "terminal.integrated.rendererType": "dom",
+  "search.location": "panel",
+  "window.zoomLevel": 1,
+  "files.autoSave": "onWindowChange",
+  "files.defaultLanguage": "markdown",
+  "cSpell.userWords": [
+    "hljs"
+  ],
+  "sync.gist": "e6825bc89cb9971ca6f136ce07f17b68",
+  "sync.quietSync": true,
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.forceDownload": true,
+  "sync.forceUpload": true,
+  "editor.tabSize": 2
+}

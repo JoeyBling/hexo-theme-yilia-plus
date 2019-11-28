@@ -8,7 +8,7 @@
 			<img src="<%- url_for(theme.avatar) %>" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="<%=theme.root%>"><%=theme.author%></a></h1>
+			<h1 class="header-author"><a href="<%=theme.root%>"><%=theme.author%></a></h1>
 		</hgroup>
 		<% if (theme.subtitle){ %>
 		<p class="header-subtitle"><%=theme.subtitle%></p>
@@ -18,21 +18,21 @@
 			<ul>
 			<% for (var i in theme.menu){ %>
 				<li><a href="<%- url_for(theme.menu[i]) %>" <% if (theme.open_in_new.menu){ %>target="_blank"<% } %>><%= i %></a></li>
-	        <%}%>
+			<%}%>
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
-    		<% for (var i in theme.smart_menu){ %>
-    			<% if(theme.smart_menu[i]){ %>
-    			<a q-on="click: openSlider(e, '<%-i%>')" href="javascript:void(0)"><%= theme.smart_menu[i] %></a>
-    			<% } %>
-            <%}%>
+			<% for (var i in theme.smart_menu){ %>
+				<% if(theme.smart_menu[i]){ %>
+					<a q-on="click: openSlider(e, '<%-i%>')" href="javascript:void(0)"><%= theme.smart_menu[i] %></a>
+				<% } %>
+			<%}%>
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
 				<% for (var i in theme.subNav){ %>
 					<a class="<%= i %>" href="<%- url_for(theme.subNav[i]) %>" title="<% if (__('subNav.title.'+ i)){ %><%= __('subNav.title.'+ i) %><% } else { %><%= i %><% } %>" <% if (theme.open_in_new.subNav){ %>target="_blank"<% } %>><i class="icon-<%= i %>"></i></a>
-		        <%}%>
+				<%}%>
 			</div>
 		<% if (theme.music && theme.music.enable){ %>
 			<%# "网易云音乐插件" %>
