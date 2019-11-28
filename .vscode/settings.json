@@ -1,7 +1,9 @@
 {
+  "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "none",
+  "files.encoding": "utf8",
   "workbench.colorTheme": "Default Dark+",
   "search.exclude": {
     "**/node_modules": false,
@@ -21,6 +23,5 @@
   "sync.autoDownload": true,
   "sync.autoUpload": true,
   "sync.forceDownload": true,
-  "sync.forceUpload": true,
-  "editor.tabSize": 2
+  "sync.forceUpload": true
 }
