@@ -1,15 +1,15 @@
 'use strict';
-
+const config = require('../../package.json');
 const defaultConfig = require('../default_config');
 
 function hexoMetaGeneratorInject(data) {
-  const config = defaultConfig;
-  if (!config.meta_generator || !data ||
+  /* /i表示不区分大小写 */
+  if (!defaultConfig.meta_generator || !data ||
     data.match(/<meta\s+name=['|"]?generator['|"]?/i)) {
-    return;
+    return data;
   }
 
-  const hexoGeneratorTag = `\n  <meta name="generator" content="hexo-theme-yilia-plus">`;
+  const hexoGeneratorTag = `\n  <meta name="generator" content="` + config.name + `">`;
 
   return data.replace('</title>', '</title>' + hexoGeneratorTag);
 }
