@@ -132,6 +132,7 @@ subNav:
   github: "#"
   gitee: "#" # 码云
   jianshu: "#" #简书
+  cnblog: "#"
   #csdn: "#"
   #rss: "#"
   #zhihu: "#"

@@ -11,7 +11,10 @@ hexo.extend.helper.register('yilia_plus_vendors', function (url) {
 hexo.extend.helper.register('yilia_plus_full_url', function (url) {
   if (!!url && url.startsWith('//')) return url;
   // 项目访问上下文路径
-  var blogUrl = hexo.config.url || '/';
+  var blogUrl = (hexo.config.url) || '/';
+  if (!blogUrl.endsWith(hexo.config.root)) {
+    blogUrl = blogUrl + "/" + hexo.config.root
+  }
   blogUrl = blogUrl.endsWith("/") ? blogUrl : blogUrl + '/';
   let fullUrl = blogUrl + url.replace(/(\\|\/){2,}/g, '/');
   // .replace(/(\\|\/){2,}/g, '/').replace(/((ht|f)tp\:(\\|\/)+)/ig, 'http://')

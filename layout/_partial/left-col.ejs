@@ -4,11 +4,11 @@
 <div class="overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>;<% if (theme.style.gif && theme.style.gif.enable){ %>background: url('<%- url_for(overlayBgImg) %>') no-repeat ;<%}%>"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="<%=theme.root%>" class="profilepic">
+		<a href="<%- url_for('/') %>" class="profilepic">
 			<img src="<%- url_for(theme.avatar) %>" class="js-avatar">
 		</a>
 		<hgroup>
-			<h1 class="header-author"><a href="<%=theme.root%>"><%=theme.author%></a></h1>
+			<h1 class="header-author"><a href="<%- url_for('/') %>"><%=theme.author%></a></h1>
 		</hgroup>
 		<% if (theme.subtitle){ %>
 		<p class="header-subtitle"><%=theme.subtitle%></p>

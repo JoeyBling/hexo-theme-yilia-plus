@@ -203,5 +203,16 @@
         border: 1px solid #086ef6;
       }
     }
+
+    a[class^=""],
+    a[class*=""],
+    a {
+      background: #C71D23;
+      border: 1px solid #C71D23;
+
+      &:hover {
+        border: 1px solid #C71D23
+      }
+    }
   }
 }
