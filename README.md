@@ -133,6 +133,7 @@ subNav:
   gitee: "#" # 码云
   jianshu: "#" #简书
   cnblog: "#"
+  #blog: "#"
   #csdn: "#"
   #rss: "#"
   #zhihu: "#"

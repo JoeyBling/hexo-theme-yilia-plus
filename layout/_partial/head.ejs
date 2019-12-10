@@ -24,7 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <% if (is_home()){ %>
     <%# "辅助函数（Helpers）https://hexo.io/zh-cn/docs/helpers.html#%E6%9D%A1%E4%BB%B6%E5%87%BD%E6%95%B0" %>
-    <meta name="keywords" content="<%=config.description%>">
+    <!-- <meta name="keywords" content="<%=config.keywords%>">
+    <meta name="description" content="<%=config.description%>"> -->
   <% } %>
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <% if (theme.rss){ %>
