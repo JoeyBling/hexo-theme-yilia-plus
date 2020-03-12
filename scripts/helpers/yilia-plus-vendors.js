@@ -14,13 +14,14 @@ hexo.extend.helper.register('yilia_plus_full_url', function (url) {
   yilia_plus_log("params url ===> " + url);
   if (!!url && url.startsWith('//')) return url;
   // 项目访问上下文路径
-  var blogUrl = (hexo.config.url) || '/';
+  var blogUrl = hexo.config.url || '/';
   if (!blogUrl.endsWith(hexo.config.root)) {
     blogUrl = blogUrl + "/" + hexo.config.root
   }
   blogUrl = blogUrl.endsWith("/") ? blogUrl : blogUrl + '/';
   let fullUrl = (blogUrl + url).replace(/(\\|\/){2,}/g, '/')
-    .replace(/((ht|f)tp\:(\\|\/)+)/ig, 'http://');
+    .replace(/((ht|f)tp\:(\\|\/)+)/ig, 'http://')
+    .replace(/((ht|f)tps\:(\\|\/)+)/ig, 'https://');
   // .replace(/(\\|\/){2,}/g, '/').replace(/((ht|f)tp\:(\\|\/)+)/ig, 'http://')
   yilia_plus_log("yilia_plus_full_url finish ===> " + fullUrl);
   return fullUrl;

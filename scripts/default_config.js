@@ -6,7 +6,7 @@ module.exports = {
   themeName: config.name,
   log: {
     // 日志开关【生产环境请关闭】
-    enable: true,
+    enable: false,
     color: "blue"
   },
   // 生成meta `generator`
