@@ -153,6 +153,10 @@ clickLove:
   # (关闭请设置为false)
   enable: true
 
+
+# 心知天气(如果不用为false):https://www.seniverse.com
+xinzhi_weather: true
+
 # GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
 github:
   # (关闭请设置为false)
