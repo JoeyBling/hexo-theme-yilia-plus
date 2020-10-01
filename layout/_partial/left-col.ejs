@@ -31,7 +31,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				<% for (var i in theme.subNav){ %>
-					<a class="<%= i %>" href="<%- url_for(theme.subNav[i]) %>" title="<% if (__('subNav.title.'+ i)){ %><%= __('subNav.title.'+ i) %><% } else { %><%= i %><% } %>" <% if (theme.open_in_new.subNav){ %>target="_blank"<% } %>><i class="icon-<%= i %>"></i></a>
+					<a class="<%= i.icon %>" href="<%- url_for(i.link) %>" title="<% if (__('subNav.title.'+ i)){ %><%= __('subNav.title.'+ i) %><% } else { %><%= i.link %><% } %>" <% if (theme.open_in_new.subNav){ %>target="_blank"<% } %>><i class="icon-<%= i.icon %>"></i></a>
 				<%}%>
 			</div>
 		<% if (theme.music && theme.music.enable){ %>
@@ -48,5 +48,5 @@
 			<% } %>
 		<% } %>
 		</nav>
-	</header>		
+	</header>
 </div>
