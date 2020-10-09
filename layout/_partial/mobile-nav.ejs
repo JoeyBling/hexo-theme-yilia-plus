@@ -26,8 +26,11 @@
 			<nav class="header-nav">
 				<div class="social">
 					<% for (var i in theme.subNav){ %>
-						<a class="<%= i %>" target="_blank" href="<%- url_for(theme.subNav[i]) %>" title="<% if (__('subNav.title.'+ i)){ %><%= __('subNav.title.'+ i) %><% } else { %><%= i %><% } %>"><i class="icon-<%= i %>"></i></a>
-			        <%}%>
+						<% for (var nav in theme.subNav[i]){ %>
+						<a class="<%= nav %>" target="_blank" 
+							href="<%- url_for(theme.subNav[i][nav]) %>" title="<% if (__('subNav.title.'+ nav)){ %><%= __('subNav.title.'+ nav) %><% } else { %><%= nav %><% } %>"><i class="icon-<%= nav %>"></i></a>
+						<%}%>
+					<%}%>
 				</div>
 			</nav>
 

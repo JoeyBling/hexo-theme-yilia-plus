@@ -6,26 +6,27 @@ menu:
 
 # subNav-子导航
 subNav:
-  github: "#"
-  gitee: "#" # 码云
-  jianshu: "#" #简书
-  cnblog: "#"
-  #blog: "#"
-  #csdn: "#"
-  #rss: "#"
-  #zhihu: "#"
-  #qq: "img/2434387555.jpg"
-  #weixin: "img/weixin_.png"
-  #weibo: "#"
-  #douban: "#"
-  #segmentfault: "#"
-  #bilibili: "#"
-  #acfun: "#"
-  #mail: "mailto:zhousiwei0911@qq.com"
-  #facebook: "#"
-  #google: "#"
-  #twitter: "#"
-  #linkedin: "#"
+  - github: "#"
+  - github: "#" # (支持设置多个)
+  - gitee: "#" # 码云
+  - jianshu: "#" #简书
+  # - cnblog: "#"
+  # - blog: "#"
+  # - csdn: "#"
+  # - rss: "#"
+  # - zhihu: "#"
+  # - qq: "img/2434387555.jpg"
+  # - weixin: "img/weixin_.png"
+  # - weibo: "#"
+  # - douban: "#"
+  # - segmentfault: "#"
+  # - bilibili: "#"
+  # - acfun: "#"
+  # - mail: "mailto:zhousiwei0911@qq.com"
+  # - facebook: "#"
+  # - google: "#"
+  # - twitter: "#"
+  # - linkedin: "#"
 
 # 悬停预览图片效果
 hover_effect:

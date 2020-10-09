@@ -36,7 +36,7 @@ subNav:
     segmentfault: SegmentFault
     bilibili: 嗶哩嗶哩
     acfun: 'NULL'
-    mail: 'NULL'  # 邮件联系
+    mail: '邮件联系'  # 邮件联系
     facebook: Facebook
     google: Google
     twitter: Twitter

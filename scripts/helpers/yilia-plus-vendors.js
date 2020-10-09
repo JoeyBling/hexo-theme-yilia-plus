@@ -12,9 +12,9 @@ hexo.extend.helper.register('yilia_plus_vendors', function (url) {
 /** 自定义网站链接生成 */
 hexo.extend.helper.register('yilia_plus_full_url', function (url) {
   yilia_plus_log("params url ===> " + url);
-  if (!!url && url.startsWith('//')) return url;
+  if (!url || url.startsWith('//')) return url;
   // 项目访问上下文路径
-  var blogUrl = hexo.config.url || '/';
+  let blogUrl = hexo.config.url || '/';
   if (!blogUrl.endsWith(hexo.config.root)) {
     blogUrl = blogUrl + "/" + hexo.config.root
   }
