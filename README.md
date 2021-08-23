@@ -25,29 +25,32 @@ hexo-theme-yilia-plus
 1. 手机端头像添加主页跳转链接
 2. 集成不蒜子访问量统计功能
 3. 网易云音乐插件
-4. 页面点击小红心效果
-5. 增加了多个SubNav导航图标展示
-6. 添加GitHub Ribbons(Fork me)
-7. 页脚 Litten自定义(弃用)
-8. 添加版权声明
-9. 添加百度站长平台主动推送
-10. 集成 gitment 评论 ➡️ [https://github.com/JoeyBling/yilia-plus-demo](https://github.com/JoeyBling/yilia-plus-demo)
-11. [集成码云评论](https://gitee.com/zhousiwei/giteement) ➡️ [https://gitee.com/zhousiwei/yilia-plus-demo](https://gitee.com/zhousiwei/yilia-plus-demo)
-12. 添加网站成立年份
-13. 页面加载进度条
-14. 添加苹果图标
-15. 标签页标题切换功能
-16. 添加字数统计功能
-17. 添加文字输入特效
-18. 友情链接优化展示
-19. 左侧边栏动态图效果、左侧导航栏支持滚动
-20. 添加悬停预览图片效果
-21. 其他样式轻微调优、社交图标优化
-22. 优化配置是否在新窗口打开链接
-23. [fix bugs](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/fix-bugs-record%EF%BC%88%E4%BF%AE%E5%A4%8Dbug%E8%AE%B0%E5%BD%95%EF%BC%89)
-24. [添加看板娘动态模型插件](https://github.com/JoeyBling/live2d-widget.js)
-25. 添加飘雪特效
-26. 自定义文章版权声明文本
+4. aplayer音乐插件
+5. 页面点击小红心效果
+6. 增加了多个SubNav导航图标展示
+7. 添加GitHub Ribbons(Fork me)
+8. 页脚 Litten自定义(弃用)
+9. 添加版权声明
+10. 添加百度站长平台主动推送
+11. ~~集成 gitment 评论 ➡️ [https://github.com/JoeyBling/yilia-plus-demo](https://github.com/JoeyBling/yilia-plus-demo)~~ 已经不能使用。
+12. ~~[集成码云评论](https://gitee.com/zhousiwei/giteement) ➡️ [https://gitee.com/zhousiwei/yilia-plus-demo ](https://gitee.com/zhousiwei/yilia-plus-demo)~~ 已经不能使用。
+13. 集成[Beaudar - 表达](https://github.com/beaudar/beaudar))评论插件，基于 GitHub issue 的轻量评论插件，Utterances 的中文版本
+14. 添加网站成立年份
+15. 页面加载进度条
+16. 添加苹果图标
+17. 标签页标题切换功能
+18. 添加字数统计功能
+19. 添加文字输入特效
+20. 添加两种飘雪特效
+21. 添加动态线条效果
+22. 友情链接优化展示
+23. 左侧边栏动态图效果、左侧导航栏支持滚动
+24. 添加悬停预览图片效果
+25. 其他样式轻微调优、社交图标优化
+26. 优化配置是否在新窗口打开链接
+27. [fix bugs](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/fix-bugs-record%EF%BC%88%E4%BF%AE%E5%A4%8Dbug%E8%AE%B0%E5%BD%95%EF%BC%89)
+28. [添加看板娘动态模型插件](https://github.com/JoeyBling/live2d-widget.js)
+29. 自定义文章版权声明文本
 
 > 如果有小伙伴有新功能的意见或者改进欢迎给我提意见和建议~
 
@@ -90,6 +93,9 @@ hexo-theme-yilia-plus
 如果您对主题有一些定制化的需求，请参考wiki[《yilia-plus源码目录结构及构建须知》](https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/yilia-plus%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E5%8F%8A%E6%9E%84%E5%BB%BA%E9%A1%BB%E7%9F%A5)
 
 #### 评论支持
+
+- [Beaudar - 表达](基于 GitHub issue 的轻量评论插件，Utterances 的中文版本)
+
 - [Gitment](https://github.com/imsun/gitment)
 - [基于码云的评论系统](https://gitee.com/zhousiwei/giteement)
 - DISQUS
@@ -217,7 +223,7 @@ avatar: /img/head.jpg
 # 是否开启分享
 share_jia: true
 
-# 评论：1、畅言；2、Disqus；3、Gitment；4、Giteement
+# 评论：1、畅言；2、Disqus；3、Gitment；4、Giteement 5、beaudar-表达
 # 不需要使用某项，直接设置值为false，或注释掉
 # 具体请参考wiki：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki
 
@@ -255,21 +261,53 @@ giteement:
     client_id: ''           #client ID
     client_secret: ''       #client secret
 
+# 5、beaudar评论，由于giteement和gitment都不能使用了，所以使用beaudar
+# 插件配置地址 https://beaudar.lipk.org/
+beaudar:
+  enable: true
+  repo: ''       # 仓库名称 注意直接从GitHub上复制 / 左右可能有空格，注意删除
+  issue_term: 'pathname'      # beaudar 生成的博客文章 ↔️ Issue 映射关系
+  label: ''            # issue 标签，选择将分配给 Beaudar 创建的问题的标签
+  theme: 'github-light'       # beaudar 主题
+
 # 访问量统计功能(不蒜子)
 busuanzi:
   enable: true
   site_visit: true  # 站点访问量显示
   article_visit: true  # 文章访问量显示
 
-# 网易云音乐插件
+# 音乐插件
 music:
-  enable: false
-  # 播放器尺寸类型(1：长尺寸、2：短尺寸)
-  type: 2
-  #id: 1332647902  # 网易云分享的音乐ID(更换音乐请更改此配置项)
-  autoPlay: true  # 是否开启自动播放
-  # 提示文本(关闭请设置为false)
-  text: '这似乎是首纯音乐，请尽情的欣赏它吧！'
+  enable: true        # 是否使用音乐插件
+  text: ''            # 提示文本(关闭请设置为false)
+  cloudMusic:         # 网易云音乐插件
+    enable: false     # 使用网易云
+    # 播放器尺寸类型(1：长尺寸、2：短尺寸)
+    type: 2
+    id: 30245064  # 网易云分享的音乐ID(更换音乐请更改此配置项) 572578819 奏之曲 5308028 My Soul 30245064再次，四月是你的谎言 33785991 badApple 八音盒版
+    autoPlay: false  # 是否开启自动播放
+
+  # aplayer 音乐插件，https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
+  # 确保安装了 npm install --save hexo-tag-aplayer，并且在hexo的配置文件_config.yml文件中添加以下两行
+  # aplayer:
+  #   meting: true
+  # 如果想在文章中使用 在文章对应位置添加 以下代码即可
+  # {% meting "60198" "netease" "playlist" "autoplay" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86" ... %}
+  aplayer:                # aplayer 音乐插件
+    enable: true          # 使用aplayer
+    id: '7786619105'                # 必须值 歌曲 id / 播放列表 id / 相册 id / 搜索关键字
+    server: 'tencent'	          # 必须值 音乐平台: netease, tencent, kugou, xiami, baidu
+    type: 'playlist'	            # 必须值 song, playlist, album, search, artist
+    fixed: true	          # false 开启固定模式 true 开启吸底模式
+    loop: none	          # 列表循环模式：all, one,none
+    order: random	        # 列表播放模式： list, random
+    volume: 0.4	          # 播放器音量
+    listfolded: true	    # 指定音乐播放列表是否折叠
+    autoplay: false	      # 自动播放，移动端浏览器暂时不支持此功能
+    mutex: true	          # 该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停
+    listmaxheight: 400px	# 播放列表的最大长度
+    preload: none	        # 音乐文件预载入模式，可选项： none, metadata, auto
+    theme: #00b9f1	      # 播放器风格色彩设置
 
 # 页面点击小红心
 clickLove:
@@ -335,7 +373,20 @@ activate_power_mode:
 
 # 飘雪特效
 # https://github.com/MlgmXyysd/snow.js
-snow: false
+snow:
+  enable: true
+  type: 1     # 1 小雪花 2 大雪花
+
+# https://github.com/hustcc/canvas-nest.js
+# 配置详见： https://github.com/hustcc/canvas-nest.js#configuration
+# 动态线条效果，会向鼠标集中
+canvas_nest:
+  enable: true
+  color: '28,28,28'            # 线条颜色, default: '0,0,0'; RGB values: (R,G,B).(note: 使用 ',' 分开.)
+  pointColor: '26,1,57'        # 点的颜色, default: '0,0,0'; RGB values: (R,G,B).(note: 使用 ',' 分开.)
+  opacity: '0.5'               # 线条不透明度 (0~1), default: 0.5.  1不透明
+  count: '99'                  # 线条数量, default: 99.
+  zIndex: '-1'                 # z-index 背景属性, default: -1.
 
 # 看板娘动态模型插件
 ## https://github.com/JoeyBling/live2d-widget.js
@@ -422,6 +473,9 @@ aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众�
 | ![](./examples/images/weixin.png) | ![](./examples/images/alipay.jpeg) |
 
 ### Hexo博客优化
+
+- [hexo博客yilia-plus主题更换Beaudar评论插件 | 兔子的个人博客 - Hexo Blog (gitee.io)](https://proudrabbit.gitee.io/hexo博客yilia-plus主题更换Beaudar评论插件.html)
+
 - [Hexo博客集成码云评论系统](https://www.jianshu.com/p/f5c4633524c7)
 - [Hexo博客集成Gitment评论](https://www.jianshu.com/p/ac7658cc912f)
 - [Hexo 编译文档时 JS或HTML 混乱解决方案](https://www.jianshu.com/p/2a8b850d3f92)
@@ -431,6 +485,7 @@ aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众�
 - [Hexo博客添加helper-live2d动态模型插件](https://www.jianshu.com/p/a7f4a42e4b49)
 - [Hexo博客添加访问量统计](https://www.jianshu.com/p/c9f83d5b893a)
 - [Hexo博客yilia主题添加背景音乐 （网易云音乐）](https://www.jianshu.com/p/f3fe5cb74d32)
+- [hexo博客yilia-puls主题使用aplayer音乐插件 | 兔子的个人博客 - Hexo Blog (gitee.io)](https://proudrabbit.gitee.io/hexo博客yilia-puls主题使用aplayer音乐插件.html)
 - [使用Hexo+GitHub搭建免费个人博客](https://www.jianshu.com/p/efebead840b2)
 
 ## License

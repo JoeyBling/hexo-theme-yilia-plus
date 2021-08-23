@@ -11,7 +11,7 @@
   },
   "vsicons.dontShowNewVersionMessage": true,
   "terminal.integrated.rendererType": "dom",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "files.autoSave": "onWindowChange",
   "files.defaultLanguage": "markdown",
   "cSpell.userWords": [
