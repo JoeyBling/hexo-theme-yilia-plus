@@ -139,6 +139,7 @@
 </section>
 <% } %>
 
+<!-- giteement评论插件 -->
 <% if (theme.giteement && theme.giteement.enable){ %>
 <%- partial('post/giteement', {
       key: post.slug,
@@ -147,11 +148,21 @@
     }) %>
 <% } %>
 
+<!-- gitment评论插件 -->
 <% if (theme.gitment_owner && theme.gitment_repo &&theme.gitment_oauth && theme.gitment_oauth.client_id && theme.gitment_oauth.client_secret){ %>
   <%- partial('post/gitment', {
       key: post.slug,
       title: post.title,
       url: config.url+url_for(post.path)
+    }) %>
+  <% } %>
+
+<!-- beaudar评论插件 -->
+<% if (theme.beaudar){ %>
+  <%- partial('post/beaudar', { 
+      key: post.slug, 
+      title: post.title, 
+      url: config.url+url_for(post.path) 
     }) %>
   <% } %>
 

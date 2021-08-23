@@ -95,7 +95,7 @@ avatar: /img/head.jpg
 # 是否开启分享
 share_jia: true
 
-# 评论：1、畅言；2、Disqus；3、Gitment；4、Giteement
+# 评论：1、畅言；2、Disqus；3、Gitment；4、Giteement 5、beaudar-表达
 # 不需要使用某项，直接设置值为false，或注释掉
 # 具体请参考wiki：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki
 
@@ -133,21 +133,54 @@ giteement:
     client_id: ''           #client ID
     client_secret: ''       #client secret
 
+# 5、beaudar-表达 评论，由于giteement和gitment都不能使用了，所以使用beaudar
+# 插件配置地址 https://beaudar.lipk.org/
+beaudar:
+  enable: true
+  repo: ''       # 仓库名称 注意直接从GitHub上复制 / 左右可能有空格，注意删除
+  issue_term: 'pathname'                          # beaudar 生成的博客文章 ↔️ Issue 映射关系
+  label: 'comment'                                # issue 标签，选择将分配给 Beaudar 创建的问题的标签
+  theme: 'github-light'                           # beaudar 主题
+
 # 访问量统计功能(不蒜子)
 busuanzi:
   enable: true
   site_visit: true  # 站点访问量显示
   article_visit: true  # 文章访问量显示
 
-# 网易云音乐插件
+# 音乐插件
 music:
-  enable: false
-  # 播放器尺寸类型(1：长尺寸、2：短尺寸)
-  type: 2
-  #id: 1334445174  # 网易云分享的音乐ID(更换音乐请更改此配置项)
-  autoPlay: true  # 是否开启自动播放
-  # 提示文本(关闭请设置为false)
-  text: '这似乎是首纯音乐，请尽情的欣赏它吧！'
+  enable: true        # 是否使用音乐插件
+  text: ''            # 提示文本(关闭请设置为false)
+  
+  cloudMusic:         # 网易云音乐插件
+    enable: false     # 使用网易云
+    # 播放器尺寸类型(1：长尺寸、2：短尺寸)
+    type: 2
+    id: 30245064  # 网易云分享的音乐ID(更换音乐请更改此配置项) 572578819 奏之曲 5308028 My Soul 30245064再次，四月是你的谎言 33785991 badApple 八音盒版
+    autoPlay: false  # 是否开启自动播放
+
+  # aplayer 音乐插件，https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
+  # 确保安装了 npm install --save hexo-tag-aplayer，并且在hexo的配置文件_config.yml文件中添加以下两行
+  # aplayer:
+  #   meting: true
+  # 如果想在文章中使用 在文章对应位置添加 以下代码即可
+  # {% meting "60198" "netease" "playlist" "autoplay" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86" ... %}
+  aplayer:                # aplayer 音乐插件
+    enable: true          # 使用aplayer
+    id: '7786619105'                # 必须值 歌曲 id / 播放列表 id / 相册 id / 搜索关键字
+    server: 'tencent'	          # 必须值 音乐平台: netease, tencent, kugou, xiami, baidu
+    type: 'playlist'	            # 必须值 song, playlist, album, search, artist
+    fixed: true	          # false 开启固定模式 true 开启吸底模式
+    loop: none	          # 列表循环模式：all, one,none
+    order: random	        # 列表播放模式： list, random
+    volume: 0.4	          # 播放器音量
+    listfolded: true	    # 指定音乐播放列表是否折叠
+    autoplay: false	      # 自动播放，移动端浏览器暂时不支持此功能
+    mutex: true	          # 该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停
+    listmaxheight: 400px	# 播放列表的最大长度
+    preload: none	        # 音乐文件预载入模式，可选项： none, metadata, auto
+    theme: #00b9f1	      # 播放器风格色彩设置
 
 # 页面点击小红心
 clickLove:
@@ -215,7 +248,21 @@ activate_power_mode:
 
 # 飘雪特效
 # https://github.com/MlgmXyysd/snow.js
-snow: false
+snow:
+  enable: true
+  type: 1     # 1 小雪花 2 大雪花
+
+# https://github.com/hustcc/canvas-nest.js
+# 配置详见： https://github.com/hustcc/canvas-nest.js#configuration
+# 动态线条效果，会向鼠标集中
+canvas_nest:
+  enable: true
+  color: '28,28,28'            # 线条颜色, default: '0,0,0'; RGB values: (R,G,B).(note: 使用 ',' 分开.)
+  pointColor: '26,1,57'        # 点的颜色, default: '0,0,0'; RGB values: (R,G,B).(note: 使用 ',' 分开.)
+  opacity: '0.5'               # 线条不透明度 (0~1), default: 0.5.  1不透明
+  count: '99'                  # 线条数量, default: 99.
+  zIndex: '-1'                 # z-index 背景属性, default: -1.
+
 
 # 看板娘动态模型插件
 ## https://github.com/JoeyBling/live2d-widget.js

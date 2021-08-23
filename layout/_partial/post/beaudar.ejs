@@ -1,0 +1,12 @@
+<% if (!index && post.comments && theme.beaudar && theme.beaudar.enable){ %>
+	<div id="beaudar-comment">
+		<link rel="stylesheet" href="<%- url_for('lib/beaudar.css') %>">
+		<script src="https://beaudar.lipk.org/client.js" 
+				repo="<%=theme.beaudar.repo%>" 
+				issue-term="<%=theme.beaudar.issue_term%>"
+				label="<%=theme.beaudar.label%>"
+				theme="<%=theme.beaudar.theme%>"
+				crossorigin="anonymous" async>
+			</script>
+	</div>
+<% } %>
