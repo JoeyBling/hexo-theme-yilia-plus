@@ -1,8 +1,9 @@
 var webpack = require("webpack");
 var autoprefixer = require('autoprefixer');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CleanPlugin = require('clean-webpack-plugin');
+var path = require("path");
 
 // 模板压缩
 // 详见：https://github.com/kangax/html-minifier#options-quick-reference
@@ -17,46 +18,41 @@ module.exports = {
   entry: {
     main: "./source-src/js/main.js",
     slider: "./source-src/js/slider.js",
-    mobile: ["babel-polyfill", "./source-src/js/mobile.js"]
+    mobile: ["@babel/polyfill", "./source-src/js/mobile.js"]
   },
   output: {
-    path: "./source",
+    path: path.join(__dirname, 'source'),   // WebPack 5 禁止输出到相对路径
     publicPath: "./",
     filename: "[name].[chunkhash:6].js"
   },
   module: {
-    loaders: [{
+    rules: [{
       test: /\.js$/,
-      loader: 'babel-loader?cacheDirectory',
+      use: ['babel-loader?cacheDirectory'],
       exclude: /node_modules/
     }, {
       test: /\.html$/,
-      loader: 'html'
+      use: ['html']
     }, {
       test: /\.(scss|sass|css)$/,
-      loader: ExtractTextPlugin.extract('style-loader', ['css-loader?-autoprefixer', 'postcss-loader', 'sass-loader'])
+      use: [MiniCssExtractPlugin.loader, 'css-loader', {
+        loader: 'postcss-loader',
+        options: {
+          postcssOptions: {
+            plugins: [autoprefixer]
+          }
+        }
+      }, 'sass-loader']
     }, {
       test: /\.(gif|jpg|png)\??.*$/,
-      loader: 'url-loader?limit=500&name=img/[name].[ext]'
+      use: ['url-loader?limit=500&name=img/[name].[ext]']
     }, {
       test: /\.(woff|svg|eot|ttf)\??.*$/,
-      loader: "file-loader?name=fonts/[name].[hash:6].[ext]"
+      use: ["file-loader?name=fonts/[name].[hash:6].[ext]"]
     }]
   },
-  alias: {
-    'vue$': 'vue/dist/vue.js'
-  },
-  resolve: {
-    alias: {
-      'vue$': 'vue/dist/vue.common.js'
-    }
-  },
-  // devtool: '#eval-source-map',
-  postcss: function () {
-    return [autoprefixer];
-  },
   plugins: [
-    new ExtractTextPlugin('[name].[chunkhash:6].css'),
+    new MiniCssExtractPlugin({ filename: '[name].[chunkhash:6].css' }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
     }),
